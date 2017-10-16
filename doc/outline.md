@@ -3,7 +3,11 @@
 - Native module
     - querystring
     - url
+    - fs
+    - http
     
 - Global module    
     - Buffer
-    - fs
+    
+- Third-party module
+    - mysql    
