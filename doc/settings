@@ -5,3 +5,14 @@ shortcut
 cl
 ct
 cte
+
+JavaScript template
+
+/*
+ * https://github.com/thu/${PROJECT_NAME}
+ *
+ * Copyright mingfei.net@gmail.com
+ * Released under the MIT license
+ *
+ * Date: ${DATE} ${TIME}
+ */
