@@ -1,13 +1,29 @@
 File  -->Setting -->Languages & Framework
 NodeJs & Npm
 
-shortcut
+---
+live template
 cl
+console.log($END$);
+
 ct
+console.time('$END$');
+
 cte
+console.timeEnd('$END$');
 
+fori
+for(var $INDEX$ = 0; $INDEX$ < $LIMIT$; $INDEX$++) {
+  $END$
+}
+
+af
+($EDIT$) => {
+    $END$
+}
+
+---
 JavaScript template
-
 /*
  * https://github.com/thu/${PROJECT_NAME}
  *
@@ -16,3 +32,5 @@ JavaScript template
  *
  * Date: ${DATE} ${TIME}
  */
+
+

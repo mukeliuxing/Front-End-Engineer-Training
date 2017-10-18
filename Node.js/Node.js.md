@@ -10,7 +10,7 @@
 		- 注册回调函数
 	- 异步编程
 		- 非阻塞，充分利用系统资源
-		- 适用于处理并发请求
+		- 适用于处理并发请求1`
 	- 单进程 / 单线程
 		 - 多核下，可采用多进程机制
 
@@ -21,6 +21,11 @@ http.createServer((req, res) => { // JavaScript 匿名回调函数
     res.writeHead(200, {'Content-Type': 'text/plain'});
     res.end('Hello, Node.js!\n');
 }).listen(80, '127.0.0.1');
+
+/*
+    端口的作用：通过端口来区分出同一电脑内不同应用或者进程，从而实现一条物理网线(通过分组交换技术-比如internet)同时链接多个程序 
+    
+ */
 ```
 2. 安装
 	- Windows
@@ -35,9 +40,12 @@ node -v
 ``` 
 3. NPM
 > Node Package Manager
+
+- PHP:Composer; Python:easy_install/pip; Ruby:gen; Node.js:npm
 - 安装第三方库
 - `npm install <module_name>`
 - `npm uninstall <module-name>`
+- `npm list`
 	
 4. Node.js 模块
 
