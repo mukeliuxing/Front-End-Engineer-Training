@@ -33,4 +33,7 @@ JavaScript template
  * Date: ${DATE} ${TIME}
  */
 
+ shortcut
+ x.log + Tab
+
 
