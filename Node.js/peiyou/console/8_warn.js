@@ -4,11 +4,11 @@
  * Copyright mingfei.net@gmail.com
  * Released under the MIT license
  *
- * Date: 2017/10/19 18:07
+ * Date: 2017/10/20 10:01
  */
 
 /*
-* alias of log
+* alias of console.error
 * */
 
-console.info('info...');
+console.warn('warn...');
