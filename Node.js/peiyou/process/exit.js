@@ -10,3 +10,5 @@
 process.exit(1);
 
 process.getgid();
+
+console.log('Current id: ' + process.getgid()); // only for POSIX /ˈpɒz.ɪks/
