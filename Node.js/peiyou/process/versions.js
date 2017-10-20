@@ -8,3 +8,10 @@
  */
 
 console.log('Versions: ' + JSON.stringify(process.versions, null, '\t'));
+
+let oldmask;
+let newmask = 0644; // todo
+
+oldmask = process.umask(newmask);
+
+console.log(oldmask + '->' + newmask);
