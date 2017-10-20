@@ -26,5 +26,4 @@ console.log('after');
 /*
     首先是process.nextTick()在任何Immediate以及任何预设I/O之前
     其次是process.nextTick()是不可清除的，一旦执行就不能停止
-
  */
