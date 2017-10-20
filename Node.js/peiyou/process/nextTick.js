@@ -15,4 +15,6 @@ process.nextTick(() => {
     console.log('nextTick callback.');
 });
 
-// todo Vs. setTime(fn, 0);
+console.log('foo');
+
+// todo Vs. setTimeout(fn, 0);
