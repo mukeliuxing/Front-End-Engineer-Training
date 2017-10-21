@@ -13,13 +13,12 @@ class Human {
     }
 
     printName(){
-        console.log(this.name);
+        console.log(`name: ${this.name}`);
     }
 }
 
 let tom = new Human('Tom');
-console.log(tom);
-console.log('->' + tom.printName());
+tom.printName();
 
 class Chinese extends Human{
     constructor(name, age) {
@@ -29,9 +28,8 @@ class Chinese extends Human{
 }
 
 let zhangsan = new Chinese('Zhangsan' ,18);
-console.log(zhangsan);
-console.log('->'+zhangsan.printName());
+zhangsan.printName();
 
-console.warn(process);
+// console.warn(process);
 
-require('http').createServer()
+require('http').createServer();
