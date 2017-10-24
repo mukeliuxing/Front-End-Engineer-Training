@@ -17,5 +17,12 @@ const r = readline.createInterface({
 r.question('question...', (answer) => {
     console.log(`answer: ${answer}`);
     r.close();
+    process.stdin.destroy();
+});
+
+console.log('test...');
+
+r.on('close', () => {
+    // process.exit();
 });
 
