@@ -19,3 +19,5 @@ dns.lookup('bing.com', (err, addr, family) => {
 dns.reverse('204.79.197.200', (err, hostname) => {
     console.log(hostname);
 });
+
+console.log(dns.getServers());
