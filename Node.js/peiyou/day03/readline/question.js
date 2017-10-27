@@ -9,20 +9,19 @@
 
 const readline = require('readline');
 
-const r = readline.createInterface({
+const reader = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
-r.question('question...', (answer) => {
+reader.question('question...', (answer) => {
     console.log(`answer: ${answer}`);
-    r.close();
+    reader.close();
     process.stdin.destroy();
 });
 
-console.log('test...');
-
-r.on('close', () => {
+// or:
+reader.on('close', () => {
     // process.exit();
 });
 

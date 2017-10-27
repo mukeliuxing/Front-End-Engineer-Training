@@ -274,7 +274,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1508738987588" FOLDED="true" ID="ID_1202907529" MODIFIED="1509097413668" TEXT="Console">
+<node CREATED="1508738987588" FOLDED="true" ID="ID_1202907529" MODIFIED="1509098131483" TEXT="Console&#x25b2;">
 <font NAME="Consolas" SIZE="12"/>
 <node CREATED="1508745562524" ID="ID_1897083008" MODIFIED="1508913462689" TEXT="Console Class">
 <font NAME="Consolas" SIZE="12"/>
@@ -296,155 +296,11 @@
 </node>
 </node>
 </node>
-<node CREATED="1508738977124" ID="ID_274886501" MODIFIED="1508812196047" TEXT="Process">
+<node CREATED="1508738977124" ID="ID_274886501" MODIFIED="1509098106517" TEXT="Process&#x25b2;">
 <arrowlink DESTINATION="ID_156133102" ENDARROW="Default" ENDINCLINATION="128;-102;" ID="Arrow_ID_1309740994" STARTARROW="None" STARTINCLINATION="261;0;"/>
 <font NAME="Consolas" SIZE="12"/>
 </node>
-<node CREATED="1508720940476" FOLDED="true" ID="ID_1998388832" MODIFIED="1509011621337" TEXT="Readline">
-<font NAME="Consolas" SIZE="12"/>
-<node CREATED="1508751639299" ID="ID_1939628017" MODIFIED="1508913462690" TEXT="Class: Interface">
-<font NAME="Consolas" SIZE="12"/>
-<node CREATED="1508751661762" ID="ID_818004726" MODIFIED="1508913462809" TEXT="Events">
-<font NAME="Consolas" SIZE="12"/>
-<node CREATED="1508751669191" ID="ID_644980223" MODIFIED="1508811488506" TEXT="close">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508751705920" ID="ID_232657843" MODIFIED="1508811488506" TEXT="line">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508751707842" ID="ID_825739890" MODIFIED="1508811488506" TEXT="pause">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508751714275" ID="ID_298277987" MODIFIED="1508811488506" TEXT="resume">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508751720530" ID="ID_1726754713" MODIFIED="1508811488506" TEXT="SIGCONT">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508751728317" ID="ID_1147866838" MODIFIED="1508811488506" TEXT="SIGINT">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508751734937" ID="ID_1054861261" MODIFIED="1508811488506" TEXT="SIGTSTP">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-</node>
-<node CREATED="1508751767588" ID="ID_1034944627" MODIFIED="1508913462812" TEXT="Methods">
-<font NAME="Consolas" SIZE="12"/>
-<node CREATED="1508751775206" ID="ID_339045929" MODIFIED="1508811488505" TEXT="close()">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508751785145" ID="ID_945178442" MODIFIED="1508811488505" TEXT="pause()">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508751805042" ID="ID_1987671095" MODIFIED="1508811488505" TEXT="prompt([preserveCursor])">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508751847018" ID="ID_593296836" MODIFIED="1508811488505" TEXT="question(query, callback)">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508751874740" ID="ID_381326645" MODIFIED="1508811488505" TEXT="resume()">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508751882827" ID="ID_49889125" MODIFIED="1508811488505" TEXT="setPrompt(prompt)">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508751894578" ID="ID_1282258138" MODIFIED="1508811488505" TEXT="write(data[, key])">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-</node>
-</node>
-<node CREATED="1508752059988" ID="ID_1304726327" MODIFIED="1508811488505" TEXT="clearLine(stream, dir)">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508752084449" ID="ID_736118328" MODIFIED="1508811488505" TEXT="clearScreenDown(stream)">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508752105535" ID="ID_172803786" MODIFIED="1508913462691" TEXT="createInterface(options)">
-<font NAME="Consolas" SIZE="12"/>
-<node CREATED="1508752242591" ID="ID_1156779441" MODIFIED="1508811488505" TEXT="Use of the completer Function">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-</node>
-<node CREATED="1508752132828" ID="ID_1277507760" MODIFIED="1508811488505" TEXT="cursorTo(stream, x, y)">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508752164245" ID="ID_566285538" MODIFIED="1508811488505" TEXT="emitKeypressEvent(stream[, interface])">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508752207004" ID="ID_782432914" MODIFIED="1508811488505" TEXT="moveCursor(stream, dx, dy)">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-</node>
-<node CREATED="1508721015698" FOLDED="true" ID="ID_157050817" MODIFIED="1509011624024" TEXT="Query Strings">
-<font NAME="Consolas" SIZE="12"/>
-<node CREATED="1508811260650" ID="ID_1428465273" MODIFIED="1508811488505" TEXT="querystring.escape(str)">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508811319935" ID="ID_109368326" MODIFIED="1508811488504" TEXT="querystring.parse(str[, sep[, eq[, options]]])">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508811397400" ID="ID_361789891" MODIFIED="1508811488504" TEXT="querystring.stringify(obj[, sep[, eq[, options]]])">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508811435136" ID="ID_1613572678" MODIFIED="1508811488504" TEXT="querysttring.unescape(str)">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-</node>
-<node CREATED="1508721034091" FOLDED="true" ID="ID_1698296018" MODIFIED="1509071284190" TEXT="URL">
-<font NAME="Consolas" SIZE="12"/>
-<node CREATED="1508813768765" ID="ID_340103160" MODIFIED="1508914325070" TEXT="URL Strings and URL Objects">
-<font NAME="Consolas" SIZE="12"/>
-<node CREATED="1508813993479" ID="ID_1825813316" MODIFIED="1508914325070" TEXT="urlObject.href">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508814045605" ID="ID_163112412" MODIFIED="1508914325069" TEXT="urlObject.protocal">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508814061966" ID="ID_754538769" MODIFIED="1508914325069" TEXT="urlObject.slashes">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508814074008" ID="ID_419536220" MODIFIED="1508914325069" TEXT="urlObject.host">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508814077541" ID="ID_1194907907" MODIFIED="1508914325069" TEXT="urlObject.auth">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508814083766" ID="ID_1348308730" MODIFIED="1508914325069" TEXT="urlObject.hostname">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508814089444" ID="ID_199949373" MODIFIED="1508914325069" TEXT="urlObject.port">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508814093800" ID="ID_1659486342" MODIFIED="1508914325069" TEXT="urlObject.pathname">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508814099598" ID="ID_468472042" MODIFIED="1508914325069" TEXT="urlObject.search">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508814106020" ID="ID_1464075375" MODIFIED="1508914325069" TEXT="urlObject.path">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508814110777" ID="ID_71453882" MODIFIED="1508914325069" TEXT="urlObject.query">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508814115639" ID="ID_1372592274" MODIFIED="1508914325069" TEXT="urlObject.hash">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-</node>
-<node CREATED="1508813789015" ID="ID_1928050103" MODIFIED="1508914325069" TEXT="url.format(urlObject)">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508813855723" ID="ID_757038884" MODIFIED="1508914325069" TEXT="url.parse(urlString)[, parseQueryString[, slashesDenoteHost]]">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508813950476" ID="ID_605081748" MODIFIED="1508914325069" TEXT="url.resolve(from, to)">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1508813972407" ID="ID_271444560" MODIFIED="1508914325069" TEXT="Escaped Characters">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-</node>
-<node CREATED="1508720916061" ID="ID_1542998578" MODIFIED="1509095271305" TEXT="OS">
+<node CREATED="1508720916061" FOLDED="true" ID="ID_1542998578" MODIFIED="1509098121199" TEXT="OS&#x25b2;">
 <font NAME="Consolas" SIZE="12"/>
 <node CREATED="1508746688100" ID="ID_1923915557" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#os-eol" MODIFIED="1509097428597" TEXT="os.EOL">
 <font NAME="Consolas" SIZE="12"/>
@@ -539,6 +395,151 @@
 <font NAME="Consolas" SIZE="12"/>
 </node>
 </node>
+</node>
+<node CREATED="1509098109741" MODIFIED="1509098109741" TEXT="&#x25b2;"/>
+</node>
+<node CREATED="1508720940476" ID="ID_1998388832" MODIFIED="1509098128740" TEXT="Readline&#x25b2;">
+<font NAME="Consolas" SIZE="12"/>
+<node CREATED="1508751639299" ID="ID_1939628017" MODIFIED="1508913462690" TEXT="Class: Interface">
+<font NAME="Consolas" SIZE="12"/>
+<node CREATED="1508751661762" ID="ID_818004726" MODIFIED="1508913462809" TEXT="Events">
+<font NAME="Consolas" SIZE="12"/>
+<node CREATED="1508751669191" ID="ID_644980223" MODIFIED="1508811488506" TEXT="close">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508751705920" ID="ID_232657843" MODIFIED="1508811488506" TEXT="line">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508751707842" ID="ID_825739890" MODIFIED="1508811488506" TEXT="pause">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508751714275" ID="ID_298277987" MODIFIED="1508811488506" TEXT="resume">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508751720530" ID="ID_1726754713" MODIFIED="1508811488506" TEXT="SIGCONT">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508751728317" ID="ID_1147866838" MODIFIED="1508811488506" TEXT="SIGINT">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508751734937" ID="ID_1054861261" MODIFIED="1508811488506" TEXT="SIGTSTP">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+</node>
+<node CREATED="1508751767588" ID="ID_1034944627" MODIFIED="1508913462812" TEXT="Methods">
+<font NAME="Consolas" SIZE="12"/>
+<node CREATED="1508751775206" ID="ID_339045929" MODIFIED="1508811488505" TEXT="close()">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508751785145" ID="ID_945178442" MODIFIED="1508811488505" TEXT="pause()">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508751805042" ID="ID_1987671095" MODIFIED="1508811488505" TEXT="prompt([preserveCursor])">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508751847018" ID="ID_593296836" MODIFIED="1508811488505" TEXT="question(query, callback)">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508751874740" ID="ID_381326645" MODIFIED="1508811488505" TEXT="resume()">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508751882827" ID="ID_49889125" MODIFIED="1508811488505" TEXT="setPrompt(prompt)">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508751894578" ID="ID_1282258138" MODIFIED="1508811488505" TEXT="write(data[, key])">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+</node>
+</node>
+<node CREATED="1508752059988" ID="ID_1304726327" MODIFIED="1508811488505" TEXT="clearLine(stream, dir)">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508752084449" ID="ID_736118328" MODIFIED="1508811488505" TEXT="clearScreenDown(stream)">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508752105535" ID="ID_172803786" MODIFIED="1508913462691" TEXT="createInterface(options)">
+<font NAME="Consolas" SIZE="12"/>
+<node CREATED="1508752242591" ID="ID_1156779441" MODIFIED="1508811488505" TEXT="Use of the completer Function">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+</node>
+<node CREATED="1508752132828" ID="ID_1277507760" MODIFIED="1508811488505" TEXT="cursorTo(stream, x, y)">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508752164245" ID="ID_566285538" MODIFIED="1508811488505" TEXT="emitKeypressEvent(stream[, interface])">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508752207004" ID="ID_782432914" MODIFIED="1508811488505" TEXT="moveCursor(stream, dx, dy)">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+</node>
+<node CREATED="1508721015698" FOLDED="true" ID="ID_157050817" MODIFIED="1509098019735" TEXT="Query Strings">
+<font NAME="Consolas" SIZE="12"/>
+<node CREATED="1508811260650" ID="ID_1428465273" MODIFIED="1508811488505" TEXT="querystring.escape(str)">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508811319935" ID="ID_109368326" MODIFIED="1508811488504" TEXT="querystring.parse(str[, sep[, eq[, options]]])">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508811397400" ID="ID_361789891" MODIFIED="1508811488504" TEXT="querystring.stringify(obj[, sep[, eq[, options]]])">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508811435136" ID="ID_1613572678" MODIFIED="1508811488504" TEXT="querysttring.unescape(str)">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+</node>
+<node CREATED="1508721034091" FOLDED="true" ID="ID_1698296018" MODIFIED="1509098023138" TEXT="URL">
+<font NAME="Consolas" SIZE="12"/>
+<node CREATED="1508813768765" ID="ID_340103160" MODIFIED="1508914325070" TEXT="URL Strings and URL Objects">
+<font NAME="Consolas" SIZE="12"/>
+<node CREATED="1508813993479" ID="ID_1825813316" MODIFIED="1508914325070" TEXT="urlObject.href">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508814045605" ID="ID_163112412" MODIFIED="1508914325069" TEXT="urlObject.protocal">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508814061966" ID="ID_754538769" MODIFIED="1508914325069" TEXT="urlObject.slashes">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508814074008" ID="ID_419536220" MODIFIED="1508914325069" TEXT="urlObject.host">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508814077541" ID="ID_1194907907" MODIFIED="1508914325069" TEXT="urlObject.auth">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508814083766" ID="ID_1348308730" MODIFIED="1508914325069" TEXT="urlObject.hostname">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508814089444" ID="ID_199949373" MODIFIED="1508914325069" TEXT="urlObject.port">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508814093800" ID="ID_1659486342" MODIFIED="1508914325069" TEXT="urlObject.pathname">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508814099598" ID="ID_468472042" MODIFIED="1508914325069" TEXT="urlObject.search">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508814106020" ID="ID_1464075375" MODIFIED="1508914325069" TEXT="urlObject.path">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508814110777" ID="ID_71453882" MODIFIED="1508914325069" TEXT="urlObject.query">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508814115639" ID="ID_1372592274" MODIFIED="1508914325069" TEXT="urlObject.hash">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+</node>
+<node CREATED="1508813789015" ID="ID_1928050103" MODIFIED="1508914325069" TEXT="url.format(urlObject)">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508813855723" ID="ID_757038884" MODIFIED="1508914325069" TEXT="url.parse(urlString)[, parseQueryString[, slashesDenoteHost]]">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508813950476" ID="ID_605081748" MODIFIED="1508914325069" TEXT="url.resolve(from, to)">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1508813972407" ID="ID_271444560" MODIFIED="1508914325069" TEXT="Escaped Characters">
+<font NAME="Consolas" SIZE="12"/>
 </node>
 </node>
 <node CREATED="1508721050348" FOLDED="true" ID="ID_619406447" MODIFIED="1509011617201" TEXT="Path">
@@ -749,7 +750,7 @@
 </node>
 </node>
 <node CREATED="1509010814860" ID="ID_1082204723" LINK="FreeMind.md" MODIFIED="1509011581687" TEXT="HTTP"/>
-<node CREATED="1508741414197" FOLDED="true" ID="ID_350117908" MODIFIED="1509011634697" TEXT="&#x2665;&#x25b2;Events&#x263a; &#x263b; &#x263c;&#x2736;">
+<node CREATED="1508741414197" FOLDED="true" ID="ID_350117908" MODIFIED="1509098066252" TEXT="&#x2665;&#x25b2;Events&#x263a; &#x263b; &#x263c;&#x2736;">
 <font NAME="SansSerif" SIZE="12"/>
 <node CREATED="1508741446711" ID="ID_936469964" MODIFIED="1508901016438" TEXT="Class: EventsEmitter">
 <font NAME="Consolas" SIZE="12"/>
