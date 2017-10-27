@@ -47,7 +47,7 @@ node -v
 - `npm uninstall <module-name>`
 - `npm list`
 	
-4. Node.js 模块
+4. <a name="module"></a>Node.js 模块
 
 - 定义模块
 
