@@ -24,5 +24,5 @@ process.on('uncaughtException', (err) => {
 });
 
 
-process.env.= 1;
+process.env.TEST= 1;
 console.log(process.env.TEST);

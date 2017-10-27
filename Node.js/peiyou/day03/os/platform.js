@@ -1,11 +1,11 @@
 /*
- * https://github.com/thu/front-end
+ * https://github.com/thu/Front-End-Engineer-Training
  *
  * Copyright mingfei.net@gmail.com
  * Released under the MIT license
  *
- * Date: 2017/10/23 16:41
+ * Date: 2017/10/27 17:13
  */
 
 const os = require('os');
-console.log(os.hostname());
+console.log(os.platform());
