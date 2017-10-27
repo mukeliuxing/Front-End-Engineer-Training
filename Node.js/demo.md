@@ -1,318 +1,92 @@
 # Node.js demo source codes
 
-1. Console
-
-- <a name="console-object"></a>Console object
+- <a name="fs-console-object"></a>FS Console Object
 
 ```javascript
 const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
+const Console = console.Console; // method 1
 
-const logger = new console.Console(out, err);
+const out = fs.createWriteStream('./out.log');
+const err = fs.createWriteStream('./err.log');
 
-logger.log('log...');
-logger.error('error...');
+const logger = new Console(out, err);
+
+logger.log('log');
+logger.error('err');
 ```
 
+- <a name="global-console-object"></a>Global Console Object
+
 ```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
+const Console = require('console').Console; // method2
+global.console = new Console(process.stdout, process.stderr);
 
-const logger = new console.Console(out, err);
-
-logger.log('log...');
-logger.error('error...');
+global.console.log('log...');
+global.console.error('error...')
 ```
+
+- <a name="os-"></a>OS 
+
 ```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
 
-const logger = new console.Console(out, err);
+```
 
-logger.log('log...');
-logger.error('error...');
-``````
+- <a name=""></a>
+
 ```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
 
-const logger = new console.Console(out, err);
+```
 
-logger.log('log...');
-logger.error('error...');
-`````````
+- <a name=""></a>
+
 ```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
 
-const logger = new console.Console(out, err);
+```
 
-logger.log('log...');
-logger.error('error...');
-````````````
+- <a name=""></a>
+
 ```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
 
-const logger = new console.Console(out, err);
+```
 
-logger.log('log...');
-logger.error('error...');
-```````````````
+- <a name=""></a>
+
 ```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
 
-const logger = new console.Console(out, err);
+```
 
-logger.log('log...');
-logger.error('error...');
-``````````````````
+- <a name=""></a>
+
 ```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
 
-const logger = new console.Console(out, err);
+```
 
-logger.log('log...');
-logger.error('error...');
-`````````````````````
+- <a name=""></a>
+
 ```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
 
-const logger = new console.Console(out, err);
+```
 
-logger.log('log...');
-logger.error('error...');
-````````````````````````
+- <a name=""></a>
+
 ```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
 
-const logger = new console.Console(out, err);
+```
 
-logger.log('log...');
-logger.error('error...');
-```````````````````````````
+- <a name=""></a>
+
 ```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
 
-const logger = new console.Console(out, err);
+```
 
-logger.log('log...');
-logger.error('error...');
-``````````````````````````````
+- <a name=""></a>
+
 ```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
 
-const logger = new console.Console(out, err);
+```
 
-logger.log('log...');
-logger.error('error...');
-`````````````````````````````````
+- <a name=""></a>
+
 ```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
 
-const logger = new console.Console(out, err);
-
-logger.log('log...');
-logger.error('error...');
-````````````````````````````````````
-```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
-
-const logger = new console.Console(out, err);
-
-logger.log('log...');
-logger.error('error...');
-```````````````````````````````````````
-```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
-
-const logger = new console.Console(out, err);
-
-logger.log('log...');
-logger.error('error...');
-``````````````````````````````````````````
-```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
-
-const logger = new console.Console(out, err);
-
-logger.log('log...');
-logger.error('error...');
-`````````````````````````````````````````````
-```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
-
-const logger = new console.Console(out, err);
-
-logger.log('log...');
-logger.error('error...');
-````````````````````````````````````````````````
-```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
-
-const logger = new console.Console(out, err);
-
-logger.log('log...');
-logger.error('error...');
-```````````````````````````````````````````````````
-```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
-
-const logger = new console.Console(out, err);
-
-logger.log('log...');
-logger.error('error...');
-``````````````````````````````````````````````````````
-```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
-
-const logger = new console.Console(out, err);
-
-logger.log('log...');
-logger.error('error...');
-`````````````````````````````````````````````````````````
-```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
-
-const logger = new console.Console(out, err);
-
-logger.log('log...');
-logger.error('error...');
-````````````````````````````````````````````````````````````
-```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
-
-const logger = new console.Console(out, err);
-
-logger.log('log...');
-logger.error('error...');
-```````````````````````````````````````````````````````````````
-```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
-
-const logger = new console.Console(out, err);
-
-logger.log('log...');
-logger.error('error...');
-``````````````````````````````````````````````````````````````````
-```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
-
-const logger = new console.Console(out, err);
-
-logger.log('log...');
-logger.error('error...');
-`````````````````````````````````````````````````````````````````````
-```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
-
-const logger = new console.Console(out, err);
-
-logger.log('log...');
-logger.error('error...');
-````````````````````````````````````````````````````````````````````````
-```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
-
-const logger = new console.Console(out, err);
-
-logger.log('log...');
-logger.error('error...');
-```````````````````````````````````````````````````````````````````````````
-# <a name="test"></a> test
-```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
-
-const logger = new console.Console(out, err);
-
-logger.log('log...');
-logger.error('error...');
-``````````````````````````````````````````````````````````````````````````````
-```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
-
-const logger = new console.Console(out, err);
-
-logger.log('log...');
-logger.error('error...');
-`````````````````````````````````````````````````````````````````````````````````
-```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
-
-const logger = new console.Console(out, err);
-
-logger.log('log...');
-logger.error('error...');
-````````````````````````````````````````````````````````````````````````````````````
-```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
-
-const logger = new console.Console(out, err);
-
-logger.log('log...');
-logger.error('error...');
-```````````````````````````````````````````````````````````````````````````````````````
-```javascript
-const fs = require('fs');
-const out = fs.createReadStream('./out.log');
-const err = fs.createReadStream('./err.log');
-
-const logger = new console.Console(out, err);
-
-logger.log('log...');
-logger.error('error...');
 ```
