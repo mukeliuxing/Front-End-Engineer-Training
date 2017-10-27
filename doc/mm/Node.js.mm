@@ -274,7 +274,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1508738987588" FOLDED="true" ID="ID_1202907529" MODIFIED="1509095274155" TEXT="Console">
+<node CREATED="1508738987588" FOLDED="true" ID="ID_1202907529" MODIFIED="1509097413668" TEXT="Console">
 <font NAME="Consolas" SIZE="12"/>
 <node CREATED="1508745562524" ID="ID_1897083008" MODIFIED="1508913462689" TEXT="Console Class">
 <font NAME="Consolas" SIZE="12"/>
@@ -287,11 +287,11 @@
 </node>
 <node CREATED="1508744070268" ID="ID_1689615300" MODIFIED="1508913462689" TEXT="Cosole someConsole = New Console(Stdout[,Stderr])">
 <font NAME="Consolas" SIZE="12"/>
-<node CREATED="1508744903326" ID="ID_461995518" MODIFIED="1508811488508" TEXT="global.console = New Console(process.stdout, process.stderr);">
-<arrowlink DESTINATION="ID_469444924" ENDARROW="Default" ENDINCLINATION="196;0;" ID="Arrow_ID_1594906307" STARTARROW="None" STARTINCLINATION="196;0;"/>
+<node CREATED="1508744179244" ID="ID_304549007" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#fs-console-object" MODIFIED="1509097381888" TEXT="const fileConsole = New Console(outFile, errFile);">
 <font NAME="Consolas" SIZE="12"/>
 </node>
-<node CREATED="1508744179244" ID="ID_304549007" MODIFIED="1508811488507" TEXT="const fileConsole = New Console(outFile, errFile);">
+<node CREATED="1508744903326" ID="ID_461995518" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#global-console-object" MODIFIED="1509097333560" TEXT="global.console = New Console(process.stdout, process.stderr);">
+<arrowlink DESTINATION="ID_469444924" ENDARROW="Default" ENDINCLINATION="196;0;" ID="Arrow_ID_1594906307" STARTARROW="None" STARTINCLINATION="196;0;"/>
 <font NAME="Consolas" SIZE="12"/>
 </node>
 </node>
@@ -446,7 +446,7 @@
 </node>
 <node CREATED="1508720916061" ID="ID_1542998578" MODIFIED="1509095271305" TEXT="OS">
 <font NAME="Consolas" SIZE="12"/>
-<node CREATED="1508746688100" ID="ID_1923915557" MODIFIED="1508913462694" TEXT="os.EOL">
+<node CREATED="1508746688100" ID="ID_1923915557" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#os-eol" MODIFIED="1509097428597" TEXT="os.EOL">
 <font NAME="Consolas" SIZE="12"/>
 <node CREATED="1508746707083" ID="ID_141912732" MODIFIED="1508811488504" TEXT="Windows: \r\n">
 <font NAME="Consolas" SIZE="12"/>
@@ -455,58 +455,60 @@
 <font NAME="Consolas" SIZE="12"/>
 </node>
 </node>
-<node CREATED="1508747398889" ID="ID_1604464584" MODIFIED="1508811488503" TEXT="os.arch()">
+<node CREATED="1508747398889" ID="ID_1604464584" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#os-arch" MODIFIED="1509097438043" TEXT="os.arch()">
 <font NAME="Consolas" SIZE="12"/>
 </node>
-<node CREATED="1508746904881" ID="ID_369109586" MODIFIED="1508811488503" TEXT="os.constants">
+<node CREATED="1508746904881" ID="ID_369109586" MODIFIED="1509097489273" TEXT="os.constants">
+<arrowlink DESTINATION="ID_225555198" ENDARROW="Default" ENDINCLINATION="381;0;" ID="Arrow_ID_1877289371" STARTARROW="None" STARTINCLINATION="381;0;"/>
 <font NAME="Consolas" SIZE="12"/>
 </node>
-<node CREATED="1508747419726" ID="ID_1240183643" MODIFIED="1508811488503" TEXT="os.cpus()">
+<node CREATED="1508747419726" ID="ID_1240183643" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#os-cpus" MODIFIED="1509097569657" TEXT="os.cpus()">
 <linktarget COLOR="#b0b0b0" DESTINATION="ID_1240183643" ENDARROW="Default" ENDINCLINATION="470;0;" ID="Arrow_ID_1915795189" SOURCE="ID_674380009" STARTARROW="None" STARTINCLINATION="470;0;"/>
 <font NAME="Consolas" SIZE="12"/>
 </node>
 <node CREATED="1508747430707" ID="ID_999059413" MODIFIED="1508811488503" TEXT="os.endinanness()">
 <font NAME="Consolas" SIZE="12"/>
 </node>
-<node CREATED="1508748561715" ID="ID_1129529626" MODIFIED="1508811488503" TEXT="os.freemem()">
+<node CREATED="1508748561715" ID="ID_1129529626" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#os-freemem" MODIFIED="1509097584379" TEXT="os.freemem()">
 <font NAME="Consolas" SIZE="12"/>
 </node>
 <node CREATED="1508748572631" ID="ID_11752235" MODIFIED="1508811488503" TEXT="os.homedir()">
 <font NAME="Consolas" SIZE="12"/>
 </node>
-<node CREATED="1508748581737" ID="ID_919499255" MODIFIED="1508811488503" TEXT="os.hostname()">
+<node CREATED="1508748581737" ID="ID_919499255" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#os-hostname" MODIFIED="1509097596614" TEXT="os.hostname()">
 <font NAME="Consolas" SIZE="12"/>
 </node>
 <node CREATED="1508748595039" ID="ID_391849814" MODIFIED="1508811488503" TEXT="os.loadavg()">
 <font NAME="Consolas" SIZE="12"/>
 </node>
-<node CREATED="1508748608767" ID="ID_297245114" MODIFIED="1508811488503" TEXT="os.networkInterfaces()">
+<node CREATED="1508748608767" ID="ID_297245114" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#os-networkinterfaces" MODIFIED="1509097613976" TEXT="os.networkInterfaces()">
 <font NAME="Consolas" SIZE="12"/>
 </node>
-<node CREATED="1508748621254" ID="ID_668555815" MODIFIED="1508811488503" TEXT="os.platform()">
+<node CREATED="1508748621254" ID="ID_668555815" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#os-platform" MODIFIED="1509097625672" TEXT="os.platform()">
 <font NAME="Consolas" SIZE="12"/>
 </node>
 <node CREATED="1508748630718" ID="ID_7118872" MODIFIED="1508811488503" TEXT="os.release()">
 <font NAME="Consolas" SIZE="12"/>
 </node>
-<node CREATED="1508748638542" ID="ID_342095554" MODIFIED="1509095342539" TEXT="os.tmpdir()">
+<node CREATED="1508748638542" ID="ID_342095554" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#os-tmpdir" MODIFIED="1509097637516" TEXT="os.tmpdir()">
 <font NAME="Consolas" SIZE="12"/>
 </node>
-<node CREATED="1508748654571" ID="ID_1680378860" MODIFIED="1508811488502" TEXT="os.totalmem()">
+<node CREATED="1508748654571" ID="ID_1680378860" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#os-totalmem" MODIFIED="1509097653952" TEXT="os.totalmem()">
 <font NAME="Consolas" SIZE="12"/>
 </node>
 <node CREATED="1508748661798" ID="ID_150334766" MODIFIED="1508811488502" TEXT="os.type()">
 <font NAME="Consolas" SIZE="12"/>
 </node>
-<node CREATED="1508748668956" ID="ID_259998032" MODIFIED="1508811488502" TEXT="os.uptime()">
+<node CREATED="1508748668956" ID="ID_259998032" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#os-uptime" MODIFIED="1509097661644" TEXT="os.uptime()">
 <font NAME="Consolas" SIZE="12"/>
 </node>
 <node CREATED="1508748676922" ID="ID_1834069486" MODIFIED="1508811488502" TEXT="os.userinfo([options])">
 <font NAME="Consolas" SIZE="12"/>
 </node>
-<node CREATED="1508748712650" FOLDED="true" ID="ID_225555198" MODIFIED="1509095278439" TEXT="OS Constants">
+<node CREATED="1508748712650" ID="ID_225555198" MODIFIED="1509097489269" TEXT="OS Constants">
+<linktarget COLOR="#b0b0b0" DESTINATION="ID_225555198" ENDARROW="Default" ENDINCLINATION="381;0;" ID="Arrow_ID_1877289371" SOURCE="ID_369109586" STARTARROW="None" STARTINCLINATION="381;0;"/>
 <font NAME="Consolas" SIZE="12"/>
-<node CREATED="1508746919420" ID="ID_1636857284" MODIFIED="1508913462815" TEXT="Signal Constants: os.constants.signals">
+<node CREATED="1508746919420" ID="ID_1636857284" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#os-constants-signals" MODIFIED="1509097542759" TEXT="Signal Constants: os.constants.signals">
 <font NAME="Consolas" SIZE="12"/>
 <node CREATED="1508747049191" ID="ID_404193274" MODIFIED="1508811488501" TEXT="SIGHUP">
 <font NAME="Consolas" SIZE="12"/>
@@ -517,8 +519,9 @@
 <node CREATED="1508747067820" ID="ID_432799514" MODIFIED="1508811488501" TEXT="SIGTERM">
 <font NAME="Consolas" SIZE="12"/>
 </node>
+<node CREATED="1509097502037" ID="ID_774220672" MODIFIED="1509097508980" TEXT="etc..."/>
 </node>
-<node CREATED="1508746942221" ID="ID_546991376" MODIFIED="1508913462816" TEXT="Error Constants: os.constants.errno">
+<node CREATED="1508746942221" ID="ID_546991376" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#os-constants-errno" MODIFIED="1509097555357" TEXT="Error Constants: os.constants.errno">
 <font NAME="Consolas" SIZE="12"/>
 <node CREATED="1508748849598" ID="ID_1593428302" MODIFIED="1508913463138" TEXT="POSIX Error Constants">
 <font NAME="Consolas" SIZE="12"/>
