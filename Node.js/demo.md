@@ -265,6 +265,7 @@ const logger = new console.Console(out, err);
 logger.log('log...');
 logger.error('error...');
 ```````````````````````````````````````````````````````````````````````````
+# <a name="test"></a> test
 ```javascript
 const fs = require('fs');
 const out = fs.createReadStream('./out.log');
