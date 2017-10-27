@@ -25,16 +25,18 @@ global.console.log('log...');
 global.console.error('error...')
 ```
 
-- <a name="os-"></a>OS 
+- <a name="os-eol"></a>OS EOL 
 
 ```javascript
-
+const os = require('os');
+console.log(os.EOL.length);
 ```
 
-- <a name=""></a>
+- <a name="os-tmpdir"></a>OS tmpDir()
 
 ```javascript
-
+const os = require('os');
+console.log(os.tmpDir());
 ```
 
 - <a name=""></a>
