@@ -7,22 +7,22 @@
  * Date: 2017/10/24 15:13
  */
 
-// try {
-setImmediate(() => {
-    test
-});
-// } catch (err) {
-//     console.log(err);
-// }
+try {
+    setImmediate(() => {
+        test
+    });
+} catch (err) {
+    // console.log(err);
+}
 
 console.log('test...');
 
-process.stdin.resume();
-
+// process.stdin.resume();
+//
 process.on('uncaughtException', (err) => {
     console.log(err);
 });
 
 
-process.env.TEST= 1;
-console.log(process.env.TEST);
+// process.env.TEST = 1;
+// console.log(process.env.TEST);
