@@ -28,3 +28,11 @@ const urlObj = {
         href: 'http://tester:password@www.example.com:81/dir/index.html?name=tester&age=20#anchor' };
 
 console.log(url.format(urlObj));
+
+console.log(url.resolve('http://asdf.com/a/b/c/index.html', '/img/bg.jpg'));
+
+const path = require('path');
+
+console.log(path.resolve('path.js')); // 绝对路径
+
+console.log(path.extname('path.js'));
