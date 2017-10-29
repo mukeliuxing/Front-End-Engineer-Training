@@ -8,16 +8,16 @@
  */
 
 const dns = require('dns');
-dns.resolve('bing.com', (err, addr) => {
-    console.log(addr);
+dns.resolve('github.com', (err, addr) => {
+    console.log(`addr1: ${addr}`);
 });
 
 dns.lookup('bing.com', (err, addr, family) => {
-    console.log(addr);
+    console.log(`addr2: ${addr}; family: ${family}`);
 });
 
-dns.reverse('204.79.197.200', (err, hostname) => {
-    console.log(hostname);
+dns.reverse('192.30.255.113', (err, hostname) => {
+    console.log(`hostname3: ${hostname}`);
 });
 
-console.log(dns.getServers());
+console.log('4: '+dns.getServers());
