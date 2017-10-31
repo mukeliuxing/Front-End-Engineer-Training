@@ -8,7 +8,7 @@
  */
 
 const fs = require('fs');
-const util = require('util');
+const util = require('Node.js/peiyou/day03/util');
 
 let start = process.hrtime();
 
