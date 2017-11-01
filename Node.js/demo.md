@@ -109,3 +109,107 @@ console.log(os.constants.signals.SIGINT);
 const os = require('os');
 console.log(os.constants.errno.EADDRINUSE);
 ```
+
+- <a name="buffer-alloc"></a> Buffer alloc()
+
+```javascript
+const buf = Buffer.alloc(1024);
+console.log(buf);
+```
+
+- <a name="buffer-alloc-unsafe"></a> Buffer allocUnsafe()
+
+```javascript
+const buf = Buffer.allocUnsafe(64);
+console.log(buf);
+```
+
+- <a name="buffer-from-array"></a> Buffer from(): array
+
+```javascript
+const buf = Buffer.from([0x68, 0x65, 0x6c]);
+console.log(buf);
+```
+
+- <a name="buffer-from-array-buffer"></a> Buffer from(): array buffer
+
+```javascript
+const arr = new Uint16Array(2);
+
+arr[0] = 65534;
+arr[1] = 65535;
+
+console.log(arr[0]);
+console.log(arr[1]);
+
+const buf = Buffer.from(arr.buffer);
+console.log(buf);
+
+arr[0] = 65535;
+console.log(buf);
+```
+
+- <a name="buffer-from-buffer"></a> Buffer from(): buffer
+
+```javascript
+const buf1 = Buffer.from('buffer');
+const buf2 = Buffer.from(buf1);
+
+buf1[0] = 0x61;
+
+console.log(buf1.toString());
+console.log(buf2.toString());
+```
+
+- <a name="buffer-from-string"></a> Buffer from(): string
+
+```javascript
+const buf = Buffer.from('一', 'utf8');
+console.log(buf);
+```
+
+- <a name="buffer-iteration-length"></a> Buffer iteration by length
+
+```javascript
+const buff = Buffer.from([1, 2, 3]);
+
+for (let i = 0; i < buff.length; i++) {
+    console.log(buff[i]);
+}
+```
+
+- <a name="buffer-iteration-keys"></a> Buffer iteration by keys()
+
+```javascript
+const buf = Buffer.from([1, 2, 3]);
+
+for (let key of buf.keys()) {
+    console.log(`key: ${key}, value: ${buf[key]}`);
+}
+```
+
+- <a name="buffer-iteration-values"></a> Buffer iteration by values()
+
+```javascript
+const buf = Buffer.from([1, 2, 3]); // Buffer.allocUnsafe(16);
+
+for (let value of buf.values()) {
+    console.log(value);
+}
+```
+
+- <a name="buffer-iteration-entries"></a> Buffer iteration by entries()
+
+```javascript
+const buf = Buffer.from([1, 2, 3]); // Buffer.allocUnsafe(16);
+
+for (let pair of buf.entries()) {
+    console.log(pair);
+}    
+```
+
+- <a name="buffer-"></a> Buffer
+
+```javascript
+
+```

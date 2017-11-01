@@ -16,9 +16,7 @@ console.log(arr[0]);
 console.log(arr[1]);
 
 const buf = Buffer.from(arr.buffer);
-
 console.log(buf);
 
 arr[0] = 65535;
-
 console.log(buf);
