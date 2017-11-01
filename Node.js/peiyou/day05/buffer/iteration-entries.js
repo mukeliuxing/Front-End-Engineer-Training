@@ -9,21 +9,6 @@
 
 const buf = Buffer.from([1, 2, 3]); // Buffer.allocUnsafe(16);
 
-console.log(buf);
-console.log(buf.length);
-
-for (let obj of buf) {
-    console.log(obj);
-}
-
-for (let obj of buf.keys()) {
-    console.log(obj);
-}
-
-for (let obj of buf.values()) {
-    console.log(obj);
-}
-
 for (let pair of buf.entries()) {
     console.log(pair);
 }
