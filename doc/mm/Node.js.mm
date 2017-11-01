@@ -1190,9 +1190,7 @@
 <font NAME="Consolas" SIZE="12"/>
 <node CREATED="1508741639983" ID="ID_1482869813" MODIFIED="1508811488499" TEXT="Methods">
 <font NAME="Consolas" SIZE="12"/>
-<node CREATED="1509327049652" ID="ID_1750828163" LINK="#ID_972832801" MODIFIED="1509516273801" TEXT="Buffer.alloc()">
-<font NAME="Consolas" SIZE="12"/>
-</node>
+<node CREATED="1509519987365" ID="ID_1037958276" LINK="#ID_1409522954" MODIFIED="1509519999004" TEXT="Buffer.alloc()"/>
 <node CREATED="1509327064821" ID="ID_1613357555" LINK="#ID_1587043899" MODIFIED="1509516273801" TEXT="Buffer.allocUnsafe()">
 <font NAME="Consolas" SIZE="12"/>
 </node>
@@ -1200,10 +1198,10 @@
 <font NAME="Consolas" SIZE="12"/>
 </node>
 </node>
-<node CREATED="1509327088370" ID="ID_1338151849" MODIFIED="1509516273800" TEXT="Buffers and Character Encodings">
+<node CREATED="1509327088370" ID="ID_1338151849" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#buffer-character-encodigs" MODIFIED="1509519804369" TEXT="Buffers and Character Encodings">
 <font NAME="Consolas" SIZE="12"/>
 </node>
-<node CREATED="1509327110334" ID="ID_1952969938" MODIFIED="1509516273800" TEXT="Buffers and TypedArray">
+<node CREATED="1509327110334" ID="ID_1952969938" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#buffer-typed-array" MODIFIED="1509519818688" TEXT="Buffers and TypedArray">
 <font NAME="Consolas" SIZE="12"/>
 </node>
 <node CREATED="1509327137707" ID="ID_1168463765" MODIFIED="1509516273800" TEXT="Buffers and ES6 iteration">
@@ -1250,19 +1248,36 @@
 </node>
 <node CREATED="1509328378196" ID="ID_1483753799" MODIFIED="1509516273789" TEXT="Class Method">
 <font NAME="Consolas" SIZE="12"/>
-<node CREATED="1509328400426" ID="ID_972832801" MODIFIED="1509516273789" TEXT="Buffer.alloc(size[, fill[, encoding]])">
+<node CREATED="1509519849884" ID="ID_1409522954" MODIFIED="1509519890735" TEXT="Buffer.alloc...()">
+<node CREATED="1509328400426" ID="ID_972832801" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#buffer-alloc" MODIFIED="1509519935615" TEXT="Buffer.alloc(size[, fill[, encoding]])">
 <font NAME="Consolas" SIZE="12"/>
 </node>
-<node CREATED="1509328706799" ID="ID_1587043899" MODIFIED="1509516273789" TEXT="Buffer.allocUnsafe(size)">
+<node CREATED="1509328706799" ID="ID_1587043899" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#buffer-alloc-unsafe" MODIFIED="1509519952589" TEXT="Buffer.allocUnsafe(size)">
 <font NAME="Consolas" SIZE="12"/>
 </node>
 <node CREATED="1509328728847" ID="ID_752406870" MODIFIED="1509516273789" TEXT="Buffer.allocUnsafeSlow(size)">
 <font NAME="Consolas" SIZE="12"/>
 </node>
-<node CREATED="1509328765187" ID="ID_151164939" MODIFIED="1509516273789" TEXT="Buffer.byteLength(string[, encoding])">
+</node>
+<node CREATED="1509508671618" ID="ID_816333888" MODIFIED="1509520014001" TEXT="Buffer.from()">
+<font NAME="SansSerif" SIZE="12"/>
+<node CREATED="1509328881630" ID="ID_55376097" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#buffer-from-array" MODIFIED="1509519500245" TEXT="Buffer.from(array)">
 <font NAME="Consolas" SIZE="12"/>
 </node>
-<node COLOR="#338800" CREATED="1509328813396" ID="ID_335630079" MODIFIED="1509516273789" TEXT="Buffer.compare(buf1, buf2)">
+<node CREATED="1509328899862" ID="ID_946307737" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#buffer-from-array-buffer" MODIFIED="1509519510032" TEXT="Buffer.from(arrayBuffer[byteOffset[, length]]">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1509328933156" ID="ID_210601883" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#buffer-from-buffer" MODIFIED="1509519518853" TEXT="Buffer.from(buffer)">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1509328947716" ID="ID_779759719" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#buffer-from-string" MODIFIED="1509519525248" TEXT="Buffer.from(string[, encoding])">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+</node>
+<node COLOR="#338800" CREATED="1509328813396" ID="ID_335630079" MODIFIED="1509520021020" TEXT="Buffer.compare(buf1, buf2)">
+<font NAME="Consolas" SIZE="12"/>
+</node>
+<node CREATED="1509328765187" ID="ID_151164939" MODIFIED="1509516273789" TEXT="Buffer.byteLength(string[, encoding])">
 <font NAME="Consolas" SIZE="12"/>
 </node>
 <node CREATED="1509328850551" ID="ID_72071925" MODIFIED="1509516273789" TEXT="Buffer.concat(list[, totalLength])">
@@ -1273,21 +1288,6 @@
 </node>
 <node CREATED="1509328991060" ID="ID_353511126" MODIFIED="1509516273788" TEXT="Buffer.isEncoding(encoding)">
 <font NAME="Consolas" SIZE="12"/>
-</node>
-<node COLOR="#338800" CREATED="1509508671618" ID="ID_816333888" MODIFIED="1509516273788" TEXT="Buffer.from()">
-<font NAME="Consolas" SIZE="12"/>
-<node CREATED="1509328881630" ID="ID_55376097" MODIFIED="1509516273788" TEXT="Buffer.from(array)">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1509328899862" ID="ID_946307737" MODIFIED="1509516273788" TEXT="Buffer.from(arrayBuffer[byteOffset[, length]]">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1509328933156" ID="ID_210601883" MODIFIED="1509516273788" TEXT="Buffer.from(buffer)">
-<font NAME="Consolas" SIZE="12"/>
-</node>
-<node CREATED="1509328947716" ID="ID_779759719" MODIFIED="1509516273788" TEXT="Buffer.from(string[, encoding])">
-<font NAME="Consolas" SIZE="12"/>
-</node>
 </node>
 </node>
 <node CREATED="1509329023027" ID="ID_896395420" MODIFIED="1509516273788" TEXT="property: Buffer.poolSize">
@@ -1302,7 +1302,7 @@
 <node COLOR="#338800" CREATED="1509508492864" ID="ID_1112765501" MODIFIED="1509516273788" TEXT="buf.copy(target[, targetStart[, sourceStart[, sourceEnd]]])">
 <font NAME="Consolas" SIZE="12"/>
 </node>
-<node CREATED="1509329188609" ID="ID_744683879" MODIFIED="1509516273788" TEXT="buf.entries()">
+<node CREATED="1509329188609" ID="ID_744683879" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#buffer-iteration-entries" MODIFIED="1509519474558" TEXT="buf.entries()">
 <font NAME="Consolas" SIZE="12"/>
 </node>
 <node COLOR="#338800" CREATED="1509329213888" ID="ID_1348484422" MODIFIED="1509516273788" TEXT="buf.equals(otherBuffer)">
@@ -1320,13 +1320,13 @@
 <node COLOR="#338800" CREATED="1509501265483" ID="ID_978851455" MODIFIED="1509516273788" TEXT="buf.includes(value[, byteOffset][, encoding])">
 <font NAME="Consolas" SIZE="12"/>
 </node>
-<node CREATED="1509501265930" ID="ID_126397970" MODIFIED="1509516273788" TEXT="buf.keys()">
+<node CREATED="1509501265930" ID="ID_126397970" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#buffer-iteration-keys" MODIFIED="1509519436574" TEXT="buf.keys()">
 <font NAME="Consolas" SIZE="12"/>
 </node>
 <node CREATED="1509501266302" ID="ID_1701216693" MODIFIED="1509516273788" TEXT="buf.lastIndexOf(value[, byteOffset][, encoding])">
 <font NAME="Consolas" SIZE="12"/>
 </node>
-<node CREATED="1509501266692" ID="ID_331420993" MODIFIED="1509517681848" TEXT="buf.length">
+<node CREATED="1509501266692" ID="ID_331420993" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#buffer-iteration-length" MODIFIED="1509519399865" TEXT="buf.length">
 <font NAME="Consolas" SIZE="12"/>
 </node>
 <node CREATED="1509501267073" ID="ID_612008911" MODIFIED="1509516273788" TEXT="buf.readDoubleBE(offset[, noAssert])">
@@ -1401,7 +1401,7 @@
 <node COLOR="#338800" CREATED="1509501457452" ID="ID_455265450" MODIFIED="1509516273785" TEXT="buf.toJSON()">
 <font NAME="Consolas" SIZE="12"/>
 </node>
-<node CREATED="1509501457890" ID="ID_1394949886" MODIFIED="1509516273785" TEXT="buf.values()">
+<node CREATED="1509501457890" ID="ID_1394949886" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#buffer-iteration-values" MODIFIED="1509519451823" TEXT="buf.values()">
 <font NAME="Consolas" SIZE="12"/>
 </node>
 <node COLOR="#338800" CREATED="1509508573254" FOLDED="true" ID="ID_1480156554" MODIFIED="1509516273785" TEXT="buf.write...()">

@@ -208,6 +208,46 @@ for (let pair of buf.entries()) {
 }    
 ```
 
+- <a name="buffer-character-encodings"></a> Buffer character encodings 
+
+```javascript
+const buf = Buffer.from('Hello, Node.js!');
+
+console.log(buf.toString('utf8'));
+console.log(buf.toString('ascii'));
+console.log(buf.toString('hex'));
+console.log(buf.toString('base64'));
+console.log(buf.toString('binary'));
+console.log(buf.toString('latin1'));
+```
+
+- <a name="buffer-typed-array"></a> Buffer typed array 
+
+```javascript
+const arr = new Uint16Array(2);
+
+arr[0] = 5000;
+arr[1] = 4000;
+
+const buf1 = Buffer.from(arr);
+const buf2 = Buffer.from(arr.buffer);
+
+console.log(buf1);
+console.log(buf2);
+```
+
+- <a name="buffer-"></a> Buffer
+
+```javascript
+
+```
+
+- <a name="buffer-"></a> Buffer
+
+```javascript
+
+```
+
 - <a name="buffer-"></a> Buffer
 
 ```javascript
