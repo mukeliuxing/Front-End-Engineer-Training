@@ -236,19 +236,149 @@ console.log(buf1);
 console.log(buf2);
 ```
 
-- <a name="buffer-"></a> Buffer
+- <a name="fs-stat"></a> FS stat
+
+```javascript
+const fs = require('fs');
+fs.lstat(__filename, (err, stat) => {
+    console.log(stat);
+});
+console.log(__filename);
+```
+
+- <a name="fs-read-dir"></a> FS readdir
+
+```javascript
+const fs = require('fs');
+fs.readdir(__dirname, (err, files) => {
+    console.log(files);
+});
+```
+
+- <a name="fs-mk-dir"></a> FS mkdir
+
+```javascript
+const fs = require('fs');
+fs.mkdir(__dirname + '/test', (err) => {
+    console.log(err);
+});
+```
+
+- <a name="fs-read-file"></a> FS readFile 
+
+```javascript
+const fs = require('fs');
+
+try {
+    fs.readFile(__filename, (err, data) => {
+        // if(err) throw err;
+        // test error
+        console.log(data.toString());
+    });
+} catch (err) {
+    console.log(err);
+}
+
+console.log('end');
+
+process.on('uncaughtException', (err) => {
+    console.log(err);
+});
+```
+
+- <a name="fs-write-file"></a> FS writeFile 
+
+```javascript
+const fs = require('fs');
+
+fs.writeFile(__dirname + '/some_file', 'data...', (error) => {
+    console.log(error);
+});
+```
+
+- <a name="fs-append-file"></a> FS appendFile 
+
+```javascript
+const fs = require('fs');
+
+fs.appendFile(__dirname + '/some_file', 'another data...', (error) => {
+    console.log(error);
+});
+```
+
+- <a name="fs-read"></a> FS read 
+
+```javascript
+const fs = require('fs');
+
+fs.open(__dirname + '/some_file', 'r', (err, fd) => {
+    if (err) throw err;
+    let buffer = Buffer.alloc(2);
+    fs.read(fd, buffer, 0, 2, 0, (err, bytesRead, buffer) => {
+        if (err) throw err;
+        console.log(bytesRead);
+        console.log(buffer.toString());
+        fs.close();
+    });
+});
+
+process.on('uncaughtException', (err) => {
+    console.log(err);
+});
+```
+
+- <a name="fs-write"></a> FS write 
+
+```javascript
+const fs = require('fs');
+
+fs.open(__dirname + '/some_file', 'w', (err, fd) => {
+    if (err) throw err;
+    const buffer = Buffer.from('hello');
+    fs.write(fd, buffer, 0, (err, written, buffer) => {
+        if (err) throw err;
+        console.log(written);
+        console.log(buffer.toString());
+        fs.close();
+    });
+});
+
+process.on('uncaughtException', (err) => {
+    console.log(err);
+});
+```
+
+- <a name="fs-create-read-stream"></a> FS createReadStream
+
+```javascript
+const fs = require('fs');
+
+let reader = fs.createReadStream(__filename);
+
+reader.on('data', (chunk) => {
+    console.log(chunk.toString());
+});
+
+reader.on('end', () => {
+    console.log('end...');
+});
+
+console.log('game over...');
+```
+
+- <a name="fs-"></a> FS 
 
 ```javascript
 
 ```
 
-- <a name="buffer-"></a> Buffer
+- <a name="fs-"></a> FS 
 
 ```javascript
 
 ```
 
-- <a name="buffer-"></a> Buffer
+- <a name="fs-"></a> FS 
 
 ```javascript
 
