@@ -80,22 +80,13 @@ console.log(c.getPerimeter(1.2));
 		- .json
 	- 模块加载顺序
  
-```javascript
-// 对 js 文件的包装
-(function (exports, require, module, __filename, __dirname) {
-	// ...
-});
-```		
-
+    ```javascript
+    // 对 js 文件的包装
+    (function (exports, require, module, __filename, __dirname) {
+        // ...
+    });
+    ```		
+ 
 5. 事件机制
 
 6. 异步 I/O
-7. 	
-2.  网络模块
-	- HTTP
-	- HTTPS
-	- DNS
-	- NET
-	- UDP
-	- TLS
-	- 

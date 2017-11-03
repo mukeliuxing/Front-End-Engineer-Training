@@ -1,7 +1,7 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <attribute_registry SHOW_ATTRIBUTES="hide"/>
-<node CREATED="1508404948198" ID="ID_268066897" MODIFIED="1509524653088" STYLE="fork" TEXT="Node.js">
+<node CREATED="1508404948198" ID="ID_268066897" MODIFIED="1509697999056" STYLE="fork" TEXT="Node.js">
 <font BOLD="true" ITALIC="true" NAME="Consolas" SIZE="12"/>
 <hook NAME="accessories/plugins/CreationModificationPlugin_new.properties"/>
 <node CREATED="1508722079682" FOLDED="true" ID="ID_306509743" MODIFIED="1509524804697" POSITION="right" TEXT="Introduce">
@@ -1183,7 +1183,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1508741613737" FOLDED="true" ID="ID_149645199" MODIFIED="1509524811773" TEXT="Buffer">
+<node CREATED="1508741613737" FOLDED="true" ID="ID_149645199" MODIFIED="1509697911421" TEXT="Buffer">
 <font NAME="Consolas" SIZE="12"/>
 <node CREATED="1508741639983" ID="ID_1482869813" MODIFIED="1508811488499" TEXT="Methods">
 <font NAME="Consolas" SIZE="12"/>
@@ -1216,7 +1216,7 @@
 <font NAME="Consolas" SIZE="12"/>
 </node>
 </node>
-<node CREATED="1509327164565" ID="ID_174431778" MODIFIED="1509516437093" TEXT="Class: Buffer">
+<node CREATED="1509327164565" FOLDED="true" ID="ID_174431778" MODIFIED="1509697908877" TEXT="Class: Buffer">
 <font NAME="Consolas" SIZE="12"/>
 <node COLOR="#999999" CREATED="1509327191315" ID="ID_1416585870" MODIFIED="1509516273797">
 <richcontent TYPE="NODE"><html>
@@ -1436,11 +1436,8 @@
 <font NAME="Consolas" SIZE="10"/>
 </node>
 </node>
-<node CREATED="1509501852098" ID="ID_1266633783" MODIFIED="1509516273765" TEXT="">
-<font NAME="Consolas" SIZE="12"/>
 </node>
-</node>
-<node CREATED="1508897075777" ID="ID_74712003" MODIFIED="1509611820902" TEXT="File System">
+<node CREATED="1508897075777" FOLDED="true" ID="ID_74712003" MODIFIED="1509697950104" TEXT="File System">
 <font NAME="Consolas" SIZE="12"/>
 <node CREATED="1508897090984" ID="ID_1626088663" MODIFIED="1508914325058" TEXT="Buffer API">
 <font NAME="Consolas" SIZE="12"/>
@@ -1468,7 +1465,7 @@
 <node CREATED="1509346546570" ID="ID_703207237" MODIFIED="1509346558189" TEXT="readStream.bytesRead"/>
 <node CREATED="1509346562014" ID="ID_1715082245" MODIFIED="1509346573524" TEXT="readStream.path"/>
 </node>
-<node COLOR="#338800" CREATED="1509346585272" ID="ID_1536631569" MODIFIED="1509522038665" TEXT="Class: fs.Stats">
+<node CREATED="1509346585272" ID="ID_1536631569" LINK="#ID_1852326076" MODIFIED="1509696918433" TEXT="Class: fs.Stats">
 <node CREATED="1509612301915" ID="ID_1500361922" MODIFIED="1509612311328" TEXT="Methods">
 <node COLOR="#338800" CREATED="1509612314860" ID="ID_362309487" MODIFIED="1509612813605" TEXT="stats.isFile()"/>
 <node COLOR="#338800" CREATED="1509612316226" ID="ID_899975758" MODIFIED="1509612813604" TEXT="stats.isDirectory()"/>
@@ -1488,18 +1485,20 @@
 </node>
 <node CREATED="1509346707416" ID="ID_1116448389" MODIFIED="1509346734958" TEXT="fs.access(path[, mode]callback)"/>
 <node CREATED="1509346745084" ID="ID_1340597270" MODIFIED="1509346759925" TEXT="fs.accessSync(path[, mode])"/>
-<node COLOR="#338800" CREATED="1509346776874" ID="ID_1162454333" MODIFIED="1509522146572" TEXT="fs.appendFile(file, data[, data], callback)"/>
+<node CREATED="1509346776874" ID="ID_1162454333" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#fs-append-file" MODIFIED="1509697048466" TEXT="fs.appendFile(file, data[, data], callback)"/>
 <node COLOR="#338800" CREATED="1509346962704" ID="ID_1762180748" MODIFIED="1509522147040" TEXT="fs.appendFileSync(file, data[, options])"/>
 <node CREATED="1509520983551" ID="ID_96438099" MODIFIED="1509520983551" TEXT="fs.chmod(path, mode, callback)"/>
 <node CREATED="1509520985025" ID="ID_1884984091" MODIFIED="1509520985025" TEXT="fs.chmodSync(path, mode)"/>
 <node CREATED="1509521034319" ID="ID_3842891" MODIFIED="1509521034319" TEXT="fs.chown(path, uid, gid, callback)"/>
 <node CREATED="1509521035587" ID="ID_1572088272" MODIFIED="1509521035587" TEXT="fs.chownSync(path, uid, gid)"/>
-<node COLOR="#338800" CREATED="1509521036643" ID="ID_184133866" MODIFIED="1509522233730" TEXT="fs.close(fd, callback)"/>
+<node CREATED="1509521036643" ID="ID_184133866" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#fs-read" MODIFIED="1509697189941" TEXT="fs.close(fd, callback)"/>
 <node CREATED="1509521037454" ID="ID_929078937" MODIFIED="1509521037454" TEXT="fs.closeSync(fd)"/>
 <node CREATED="1509521038366" ID="ID_504219231" MODIFIED="1509521038366" TEXT="fs.constants    "/>
-<node COLOR="#338800" CREATED="1509521038784" ID="ID_230306341" MODIFIED="1509616703563" TEXT="fs.createReadStream(path[, options])"/>
-<node COLOR="#338800" CREATED="1509521039087" ID="ID_1908367750" MODIFIED="1509616710203" TEXT="fs.createWriteStream(path[, options])"/>
-<node CREATED="1509521039406" ID="ID_767590432" MODIFIED="1509521039406" TEXT="fs.exists(path, callback)"/>
+<node CREATED="1509521038784" ID="ID_230306341" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#fs-create-read-stream" MODIFIED="1509697239677" TEXT="fs.createReadStream(path[, options])"/>
+<node CREATED="1509521039087" ID="ID_1908367750" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#fs-create-write-stream" MODIFIED="1509697258949" TEXT="fs.createWriteStream(path[, options])"/>
+<node COLOR="#999999" CREATED="1509521039406" ID="ID_767590432" MODIFIED="1509697941152" TEXT="fs.exists(path, callback)">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
 <node CREATED="1509521039750" ID="ID_89420672" MODIFIED="1509521039750" TEXT="fs.existsSync(path)"/>
 <node CREATED="1509521040082" ID="ID_1552370137" MODIFIED="1509521040082" TEXT="fs.fchmod(fd, mode, callback)"/>
 <node CREATED="1509521040434" ID="ID_584945750" MODIFIED="1509521040434" TEXT="fs.fchmodSync(fd, mode)"/>
@@ -1523,16 +1522,16 @@
 <node CREATED="1509521043662" ID="ID_171468446" MODIFIED="1509521043662" TEXT="fs.linkSync(existingPath, newPath)"/>
 <node CREATED="1509521043828" ID="ID_1615247381" MODIFIED="1509521043828" TEXT="fs.lstat(path, callback)"/>
 <node CREATED="1509521044019" ID="ID_373250798" MODIFIED="1509521044019" TEXT="fs.lstatSync(path)"/>
-<node CREATED="1509521044171" ID="ID_790153804" MODIFIED="1509521044171" TEXT="fs.mkdir(path[, mode], callback)"/>
+<node CREATED="1509521044171" ID="ID_790153804" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#fs-mk-dir" MODIFIED="1509696977537" TEXT="fs.mkdir(path[, mode], callback)"/>
 <node CREATED="1509521044298" ID="ID_1562489509" MODIFIED="1509521044298" TEXT="fs.mkdirSync(path[, mode])"/>
 <node CREATED="1509521044422" ID="ID_1384538680" MODIFIED="1509521044422" TEXT="fs.mkdtemp(prefix[, options], callback)"/>
 <node CREATED="1509521044551" ID="ID_1214529931" MODIFIED="1509521044551" TEXT="fs.mkdtempSync(prefix[, options])"/>
-<node COLOR="#338800" CREATED="1509521044692" ID="ID_375518096" MODIFIED="1509522187368" TEXT="fs.open(path, flags[, mode], callback)"/>
+<node CREATED="1509521044692" ID="ID_375518096" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#fs-read" MODIFIED="1509697165902" TEXT="fs.open(path, flags[, mode], callback)"/>
 <node COLOR="#338800" CREATED="1509521044850" ID="ID_1855338146" MODIFIED="1509522187972" TEXT="fs.openSync(path, flags[, mode])"/>
-<node COLOR="#338800" CREATED="1509521044961" ID="ID_1422497098" MODIFIED="1509614879543" TEXT="fs.read(fd, buffer, offset, length, position, callback)"/>
-<node COLOR="#338800" CREATED="1509521045111" ID="ID_1321360381" MODIFIED="1509612969737" TEXT="fs.readdir(path[, options], callback)"/>
+<node CREATED="1509521044961" ID="ID_1422497098" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#fs-read" MODIFIED="1509697104410" TEXT="fs.read(fd, buffer, offset, length, position, callback)"/>
+<node CREATED="1509521045111" ID="ID_1321360381" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#fs-read-dir" MODIFIED="1509696941781" TEXT="fs.readdir(path[, options], callback)"/>
 <node COLOR="#338800" CREATED="1509521045236" ID="ID_111000622" MODIFIED="1509612972449" TEXT="fs.readdirSync(path[, options])"/>
-<node COLOR="#338800" CREATED="1509521045336" ID="ID_1941745153" MODIFIED="1509522113656" TEXT="fs.readFile(file[, options], callback)"/>
+<node CREATED="1509521045336" ID="ID_1941745153" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#fs-read-file" MODIFIED="1509696997762" TEXT="fs.readFile(file[, options], callback)"/>
 <node COLOR="#338800" CREATED="1509521045489" ID="ID_894718195" MODIFIED="1509522116800" TEXT="fs.readFileSync(file[, options])"/>
 <node CREATED="1509521045651" ID="ID_1654687349" MODIFIED="1509521045651" TEXT="fs.readlink(path[, options], callback)"/>
 <node CREATED="1509521045785" ID="ID_129161695" MODIFIED="1509521045785" TEXT="fs.readlinkSync(path[, options])"/>
@@ -1543,7 +1542,7 @@
 <node CREATED="1509521046582" ID="ID_1010597759" MODIFIED="1509521046582" TEXT="fs.renameSync(oldPath, newPath)"/>
 <node CREATED="1509521047242" ID="ID_971768333" MODIFIED="1509521047242" TEXT="fs.rmdir(path, callback)"/>
 <node CREATED="1509521047580" ID="ID_851243219" MODIFIED="1509521047580" TEXT="fs.rmdirSync(path)"/>
-<node COLOR="#338800" CREATED="1509521047954" ID="ID_1852326076" MODIFIED="1509612096157" TEXT="fs.stat(path, callback)"/>
+<node CREATED="1509521047954" ID="ID_1852326076" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#fs-stat" MODIFIED="1509696918387" TEXT="fs.stat(path, callback)"/>
 <node CREATED="1509521048267" ID="ID_1528114655" MODIFIED="1509521048267" TEXT="fs.statSync(path)"/>
 <node CREATED="1509521048669" ID="ID_1742514722" MODIFIED="1509521048669" TEXT="fs.symlink(target, path[, type], callback)"/>
 <node CREATED="1509521297905" ID="ID_337261124" MODIFIED="1509521297905" TEXT="fs.symlinkSync(target, path[, type])"/>
@@ -1562,9 +1561,9 @@
 </node>
 </node>
 <node CREATED="1509521458653" ID="ID_11428041" MODIFIED="1509521458653" TEXT="fs.watchFile(filename[, options], listener)"/>
-<node COLOR="#338800" CREATED="1509521465880" ID="ID_274467657" MODIFIED="1509522213059" TEXT="fs.write(fd, buffer, offset, length[, position], callback)"/>
+<node CREATED="1509521465880" ID="ID_274467657" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#fs-write" MODIFIED="1509697210231" TEXT="fs.write(fd, buffer, offset, length[, position], callback)"/>
 <node CREATED="1509521466665" ID="ID_1080201639" MODIFIED="1509521466665" TEXT="fs.write(fd, data[, position[, encoding]], callback)"/>
-<node COLOR="#338800" CREATED="1509521467335" ID="ID_222264288" MODIFIED="1509522126121" TEXT="fs.writeFile(file, data[, options], callback)"/>
+<node CREATED="1509521467335" ID="ID_222264288" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#fs-write-file" MODIFIED="1509697026524" TEXT="fs.writeFile(file, data[, options], callback)"/>
 <node COLOR="#338800" CREATED="1509521467874" ID="ID_1365556123" MODIFIED="1509522126783" TEXT="fs.writeFileSync(file, data[, options])"/>
 <node CREATED="1509521468399" ID="ID_1520685534" MODIFIED="1509521468399" TEXT="fs.writeSync(fd, buffer, offset, length[, position])"/>
 <node CREATED="1509521468912" ID="ID_1013868019" MODIFIED="1509521468912" TEXT="fs.writeSync(fd, data[, position[, encoding]])"/>
@@ -1575,20 +1574,20 @@
 <node CREATED="1509521521538" ID="ID_396966270" MODIFIED="1509521521538" TEXT="File Mode Constants"/>
 </node>
 </node>
-<node CREATED="1509416540480" ID="ID_1756317037" MODIFIED="1509616358498" TEXT="Stream">
+<node CREATED="1509416540480" FOLDED="true" ID="ID_1756317037" MODIFIED="1509697962628" TEXT="Stream">
 <font NAME="Consolas" SIZE="12"/>
 <node CREATED="1509522337405" ID="ID_423073829" MODIFIED="1509522349698" TEXT="Types of Streams">
 <node CREATED="1509522357695" ID="ID_1312468599" MODIFIED="1509522359020" TEXT="Object Mode"/>
 <node CREATED="1509522362228" ID="ID_1572417155" MODIFIED="1509522367493" TEXT="Buffering"/>
 </node>
-<node CREATED="1509522380054" ID="ID_741168968" MODIFIED="1509522380911" TEXT="API for Stream Consumers">
+<node CREATED="1509522380054" ID="ID_741168968" MODIFIED="1509697440743" TEXT="API for Stream Consumers">
 <node CREATED="1509522388075" ID="ID_467714083" MODIFIED="1509522389054" TEXT="Writable Streams">
 <node CREATED="1509522471915" ID="ID_1401335045" MODIFIED="1509523133545" TEXT="Class: stream.Writable">
 <node CREATED="1509522484707" ID="ID_279895597" MODIFIED="1509522484707" TEXT="Event: &apos;close&apos;"/>
 <node CREATED="1509522486527" ID="ID_1686422137" MODIFIED="1509522486527" TEXT="Event: &apos;drain&apos;"/>
 <node COLOR="#338800" CREATED="1509522487638" ID="ID_812824774" MODIFIED="1509523141031" TEXT="Event: &apos;error&apos;"/>
 <node COLOR="#338800" CREATED="1509522488323" ID="ID_735460116" MODIFIED="1509523141796" TEXT="Event: &apos;finish&apos;"/>
-<node COLOR="#338800" CREATED="1509522488943" ID="ID_594117579" MODIFIED="1509523142348" TEXT="Event: &apos;pipe&apos;"/>
+<node COLOR="#338800" CREATED="1509522488943" ID="ID_594117579" MODIFIED="1509697501850" STYLE="fork" TEXT="Event: &apos;pipe&apos;"/>
 <node COLOR="#338800" CREATED="1509522489512" ID="ID_375378884" MODIFIED="1509523145565" TEXT="Event: &apos;unpipe&apos;"/>
 <node CREATED="1509522490034" ID="ID_1797055643" MODIFIED="1509522490034" TEXT="writable.cork()"/>
 <node COLOR="#338800" CREATED="1509522490558" ID="ID_95122105" MODIFIED="1509523151785" TEXT="writable.end([chunk][, encoding][, callback])"/>
@@ -1609,7 +1608,7 @@
 <node COLOR="#338800" CREATED="1509522603777" ID="ID_226753553" MODIFIED="1509522966491" TEXT="Event: &apos;readable&apos;"/>
 <node CREATED="1509522604231" ID="ID_665310596" MODIFIED="1509522604231" TEXT="readable.isPaused()"/>
 <node COLOR="#338800" CREATED="1509522604696" ID="ID_1634917628" MODIFIED="1509523103551" TEXT="readable.pause()"/>
-<node COLOR="#338800" CREATED="1509522605149" ID="ID_897919396" MODIFIED="1509523119546" TEXT="readable.pipe(destination[, options])"/>
+<node CREATED="1509522605149" ID="ID_897919396" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#fs-pipe" MODIFIED="1509697517658" TEXT="readable.pipe(destination[, options])"/>
 <node COLOR="#338800" CREATED="1509522605651" ID="ID_713205042" MODIFIED="1509523094369" TEXT="readable.read([size])"/>
 <node COLOR="#338800" CREATED="1509522606119" ID="ID_1071658795" MODIFIED="1509523107918" TEXT="readable.resume()"/>
 <node COLOR="#338800" CREATED="1509522606627" ID="ID_416448183" MODIFIED="1509523097861" TEXT="readable.setEncoding(encoding)"/>
@@ -1659,7 +1658,7 @@
 <node CREATED="1509522868199" ID="ID_688247299" MODIFIED="1509522868199" TEXT="highWaterMark discrepency after calling readable.setEncoding()"/>
 </node>
 </node>
-<node CREATED="1509325930141" FOLDED="true" ID="ID_1400416361" MODIFIED="1509524821248" TEXT="HTTP">
+<node CREATED="1509325930141" FOLDED="true" ID="ID_1400416361" MODIFIED="1509697986521" TEXT="HTTP">
 <font NAME="Consolas" SIZE="12"/>
 <node COLOR="#338800" CREATED="1509523251469" ID="ID_1267473254" MODIFIED="1509524667437" TEXT="Class: http.Agent">
 <node CREATED="1509523360192" ID="ID_984209128" MODIFIED="1509523360192" TEXT="new Agent([options])"/>
@@ -1743,13 +1742,15 @@
 </node>
 <node CREATED="1509523309178" ID="ID_1353053502" MODIFIED="1509523309178" TEXT="http.METHODS"/>
 <node CREATED="1509523310308" ID="ID_52418637" MODIFIED="1509523310308" TEXT="http.STATUS_CODES"/>
-<node CREATED="1509523311000" ID="ID_318258698" MODIFIED="1509523311000" TEXT="http.createClient([port][, host])"/>
-<node COLOR="#338800" CREATED="1509523311538" ID="ID_1249291028" MODIFIED="1509523736757" TEXT="http.createServer([requestListener])"/>
+<node COLOR="#999999" CREATED="1509523311000" ID="ID_318258698" MODIFIED="1509697979689" TEXT="http.createClient([port][, host])">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node CREATED="1509523311538" ID="ID_1249291028" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#http-create-server" MODIFIED="1509697765678" TEXT="http.createServer([requestListener])"/>
 <node COLOR="#338800" CREATED="1509523312064" ID="ID_1194882102" MODIFIED="1509523733171" TEXT="http.get(options[, callback])"/>
 <node COLOR="#338800" CREATED="1509523312571" ID="ID_1141475007" MODIFIED="1509523741132" TEXT="http.globalAgent"/>
-<node COLOR="#338800" CREATED="1509523313107" ID="ID_901312206" MODIFIED="1509523728797" TEXT="http.request(options[, callback])"/>
+<node CREATED="1509523313107" ID="ID_901312206" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#http-request" MODIFIED="1509697778059" TEXT="http.request(options[, callback])"/>
 </node>
-<node CREATED="1509432952971" FOLDED="true" ID="ID_1966492076" MODIFIED="1509524822897" TEXT="HTTPS">
+<node CREATED="1509432952971" FOLDED="true" ID="ID_1966492076" MODIFIED="1509697996907" TEXT="HTTPS">
 <font NAME="Consolas" SIZE="12"/>
 <node CREATED="1509523919736" ID="ID_324429610" MODIFIED="1509523934698" TEXT="Class: https.Agent"/>
 <node CREATED="1509523920568" ID="ID_519555580" MODIFIED="1509523941870" TEXT="Class: https.Server">
@@ -1764,7 +1765,7 @@
 </node>
 <node CREATED="1509523921422" ID="ID_659138372" MODIFIED="1509523956950" TEXT="https.get(options[, callback])"/>
 <node CREATED="1509523921804" ID="ID_1410423005" MODIFIED="1509523962655" TEXT="https.globalAgent"/>
-<node COLOR="#338800" CREATED="1509523922233" ID="ID_790012537" MODIFIED="1509524086372" TEXT="https.request(options[, callback])"/>
+<node CREATED="1509523922233" ID="ID_790012537" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#https-request" MODIFIED="1509697812669" TEXT="https.request(options[, callback])"/>
 </node>
 <node CREATED="1509417401642" ID="ID_176346278" MODIFIED="1509516273765" TEXT="Net">
 <font NAME="Consolas" SIZE="12"/>

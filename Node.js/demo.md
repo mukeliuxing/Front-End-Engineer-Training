@@ -1,6 +1,6 @@
 # Node.js demo source codes
 
-- <a name="fs-console-object"></a>FS Console Object
+- <a name="fs-console-object"></a> FS Console Object
 
 ```javascript
 const fs = require('fs');
@@ -15,7 +15,7 @@ logger.log('log');
 logger.error('err');
 ```
 
-- <a name="global-console-object"></a>Global Console Object
+- <a name="global-console-object"></a> Global Console Object
 
 ```javascript
 const Console = require('console').Console; // method2
@@ -25,70 +25,70 @@ global.console.log('log...');
 global.console.error('error...')
 ```
 
-- <a name="os-eol"></a>OS EOL 
+- <a name="os-eol"></a> OS EOL 
 
 ```javascript
 const os = require('os');
 console.log(os.EOL.length);
 ```
 
-- <a name="os-tmpdir"></a>OS tmpDir()
+- <a name="os-tmpdir"></a> OS tmpDir()
 
 ```javascript
 const os = require('os');
 console.log(os.tmpDir());
 ```
 
-- <a name="os-hostname"></a>OS hostname()
+- <a name="os-hostname"></a> OS hostname()
 
 ```javascript
 const os = require('os');
 console.log(os.hostname());
 ```
 
-- <a name="os-platform"></a>OS platform()
+- <a name="os-platform"></a> OS platform()
 
 ```javascript
 const os = require('os');
 console.log(os.platform());
 ```
 
-- <a name="os-uptime"></a>OS uptime()
+- <a name="os-uptime"></a> OS uptime()
 
 ```javascript
 const os = require('os');
 console.log(os.uptime());
 ```
 
-- <a name="os-totalmem"></a>OS totalmem()
+- <a name="os-totalmem"></a> OS totalmem()
 
 ```javascript
 const os = require('os');
 console.log(os.totalmem());
 ```
 
-- <a name="os-freemem"></a>OS freemem()
+- <a name="os-freemem"></a> OS freemem()
 
 ```javascript
 const os = require('os');
 console.log(os.freemem());
 ```
 
-- <a name="os-cups"></a>OS cpus()
+- <a name="os-cups"></a> OS cpus()
 
 ```javascript
 const os = require('os');
 console.log(os.cpus());
 ```
 
-- <a name="os-networkinterfaces"></a>OS networkInterfaces()
+- <a name="os-networkinterfaces"></a> OS networkInterfaces()
 
 ```javascript
 const os = require('os');
 console.log(os.networkInterfaces());
 ```
 
-- <a name="os-arch"></a>OS arch()
+- <a name="os-arch"></a> OS arch()
 
 ```javascript
 const os = require('os');
@@ -96,14 +96,14 @@ console.log(os.arch());
 console.log(process.arch);
 ```
 
-- <a name="os-constants-signals"></a>OS Constants signals
+- <a name="os-constants-signals"></a> OS Constants signals
 
 ```javascript
 const os = require('os');
 console.log(os.constants.signals.SIGINT);
 ```
 
-- <a name="os-constants-errno"></a>OS Constants errno
+- <a name="os-constants-errno"></a> OS Constants errno
 
 ```javascript
 const os = require('os');
@@ -124,14 +124,14 @@ const buf = Buffer.allocUnsafe(64);
 console.log(buf);
 ```
 
-- <a name="buffer-from-array"></a> Buffer from(): array
+- <a name="buffer-from-array"></a> Buffer from() with array
 
 ```javascript
 const buf = Buffer.from([0x68, 0x65, 0x6c]);
 console.log(buf);
 ```
 
-- <a name="buffer-from-array-buffer"></a> Buffer from(): array buffer
+- <a name="buffer-from-array-buffer"></a> Buffer from() with array buffer
 
 ```javascript
 const arr = new Uint16Array(2);
@@ -149,7 +149,7 @@ arr[0] = 65535;
 console.log(buf);
 ```
 
-- <a name="buffer-from-buffer"></a> Buffer from(): buffer
+- <a name="buffer-from-buffer"></a> Buffer from() with buffer
 
 ```javascript
 const buf1 = Buffer.from('buffer');
@@ -161,7 +161,7 @@ console.log(buf1.toString());
 console.log(buf2.toString());
 ```
 
-- <a name="buffer-from-string"></a> Buffer from(): string
+- <a name="buffer-from-string"></a> Buffer from() with string
 
 ```javascript
 const buf = Buffer.from('一', 'utf8');
@@ -397,8 +397,76 @@ reader.on('end', () => {
 });
 ```
 
-- <a name="-"></a>  
+- <a name="http-create-server"></a> HTTP createServer()  
 
 ```javascript
+const http = require('http');
 
+let server = http.createServer();
+
+server.on('request', (req, res) => {
+    console.log(req.method);
+    console.log(req.url);
+    console.log(req.httpVersion);
+    console.log(req.headers);
+
+    res.writeHead(200, 'OK', {'Content-type':'text/html;charset=UTF-8'})
+    res.write('test...');
+    res.write('测试...');
+});
+
+server.listen(80);
+
+server.on('error', (error) => {
+    console.log(error);
+});
+```
+
+- <a name="http-request"></a> HTTP  request()
+
+```javascript
+const http = require('http');
+
+let ip = '59.66.23.56';
+
+let request = http.request({
+    host: 'ip.taobao.com',
+    path: '/service/getIpInfo.php?ip=' + ip
+}, (res) => {
+    res.on('data', (buf) => {
+        console.log(JSON.parse(buf.toString()));
+    })
+});
+
+request.end();
+```
+
+- <a name="https-request"></a> HTTPS  request()
+
+```javascript
+const https = require('https');
+const fs = require('fs');
+
+let request = https.request({
+    hostname: 'nodejs.org',
+    protocol: 'https:',
+    path: '/static/images/logo.svg'
+});
+
+request.on('response', (res) => {
+    console.log('status: ' + res.statusCode);
+    // console.log(res.headers);
+    let data = '';
+    res.on('data', (chunk) => {
+        data += chunk;
+    });
+    res.on('end', () => {
+        fs.writeFile('./test.svg', data, 'binary', (err) => {
+            if (err) throw err;
+            console.log('downloaded.');
+        });
+    });
+});
+
+request.end();
 ```
