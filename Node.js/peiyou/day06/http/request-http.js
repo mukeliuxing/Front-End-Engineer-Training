@@ -12,10 +12,7 @@ const http = require('http');
 let ip = '59.66.23.56';
 
 let request = http.request({
-    protocol: 'http:',
     host: 'ip.taobao.com',
-    port: 80,
-    method: 'get',
     path: '/service/getIpInfo.php?ip=' + ip
 }, (res) => {
     res.on('data', (buf) => {
