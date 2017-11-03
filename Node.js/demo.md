@@ -366,19 +366,38 @@ reader.on('end', () => {
 console.log('game over...');
 ```
 
-- <a name="fs-"></a> FS 
+- <a name="fs-create-write-stream"></a> FS createWriteStream 
 
 ```javascript
+const fs = require('fs');
 
+let writer = fs.createWriteStream('./test_file');
+
+writer.write('data...');
+
+writer.end('end...');
+
+writer.on('finish', () => {
+    console.log('finish...');
+});
 ```
 
-- <a name="fs-"></a> FS 
+- <a name="fs-pipe"></a> FS pipe 
 
 ```javascript
+const fs = require('fs');
 
+let reader = fs.createReadStream('http://bing.com');
+let writer = fs.createWriteStream('./test_file');
+
+reader.pipe(writer);
+
+reader.on('end', () => {
+    console.log('copy finish.');
+});
 ```
 
-- <a name="fs-"></a> FS 
+- <a name="-"></a>  
 
 ```javascript
 
