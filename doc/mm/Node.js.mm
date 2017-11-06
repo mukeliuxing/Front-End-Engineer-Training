@@ -1,7 +1,7 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <attribute_registry SHOW_ATTRIBUTES="hide"/>
-<node CREATED="1508404948198" ID="ID_268066897" MODIFIED="1509697999056" STYLE="fork" TEXT="Node.js">
+<node CREATED="1508404948198" ID="ID_268066897" MODIFIED="1509698398126" STYLE="fork" TEXT="Node.js">
 <font BOLD="true" ITALIC="true" NAME="Consolas" SIZE="12"/>
 <hook NAME="accessories/plugins/CreationModificationPlugin_new.properties"/>
 <node CREATED="1508722079682" FOLDED="true" ID="ID_306509743" MODIFIED="1509524804697" POSITION="right" TEXT="Introduce">
@@ -202,7 +202,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1508724570223" FOLDED="true" ID="ID_266644071" MODIFIED="1509524803296" POSITION="right" TEXT="Modules">
+<node CREATED="1508724570223" ID="ID_266644071" MODIFIED="1509702456117" POSITION="right" TEXT="Modules">
 <font NAME="Consolas" SIZE="12"/>
 <node CREATED="1508727959324" ID="ID_942188308" MODIFIED="1508913462614" TEXT="Types">
 <font NAME="Consolas" SIZE="12"/>
@@ -307,6 +307,7 @@
 </node>
 </node>
 <node CREATED="1508916329743" ID="ID_1079112791" MODIFIED="1509507639556" TEXT="webworker-threads"/>
+<node CREATED="1509702460626" ID="ID_56196580" MODIFIED="1509702463455" TEXT="supervisor"/>
 </node>
 </node>
 </node>
@@ -317,7 +318,7 @@
 <font NAME="Consolas" SIZE="12"/>
 </node>
 </node>
-<node CREATED="1508728238063" FOLDED="true" ID="ID_577476998" MODIFIED="1509524807216" POSITION="right" TEXT="Development">
+<node CREATED="1508728238063" FOLDED="true" ID="ID_577476998" MODIFIED="1509700013884" POSITION="right" TEXT="Development">
 <font NAME="Consolas" SIZE="12"/>
 <node CREATED="1508728279005" ID="ID_69299810" MODIFIED="1508913462615" TEXT="Install">
 <font NAME="Consolas" SIZE="12"/>
@@ -443,7 +444,7 @@
 <font NAME="Consolas" SIZE="12"/>
 </node>
 </node>
-<node CREATED="1508721330036" ID="ID_73419346" MODIFIED="1509524667281" POSITION="left" TEXT="API">
+<node CREATED="1508721330036" FOLDED="true" ID="ID_73419346" MODIFIED="1509699992549" POSITION="left" TEXT="API">
 <font NAME="Consolas" SIZE="12"/>
 <node CREATED="1508405007450" FOLDED="true" HGAP="18" ID="ID_788103558" MODIFIED="1509524945607" TEXT="Globals">
 <font NAME="Consolas" SIZE="12"/>
@@ -1783,5 +1784,6 @@
 <font NAME="Consolas" SIZE="12"/>
 </node>
 </node>
+<node CREATED="1509700021167" ID="ID_1424614105" MODIFIED="1509700025080" POSITION="right" TEXT="Project"/>
 </node>
 </map>

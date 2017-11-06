@@ -14,7 +14,7 @@ let filename = process.argv[1];
 
 readline.createInterface({
     input: fs.createReadStream(filename),
-    terminal: false
+    // terminal: false
 }).on('line', function (line) {
     console.log('line: ' + line);
 });
