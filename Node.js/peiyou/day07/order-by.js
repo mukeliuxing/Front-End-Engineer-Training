@@ -16,8 +16,8 @@ let connection = mysql.createConnection({
 
 connection.connect((error) => {
     if (error) throw error;
-    connection.query('select * from scott.dept', (error, results, fields) => {
+    connection.query('select ename, deptno from scott.emp order by deptno', (error, results, fields) => {
         console.log(results);
-    })
+    });
 });
 

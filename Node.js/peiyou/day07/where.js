@@ -16,7 +16,7 @@ let connection = mysql.createConnection({
 
 connection.connect((error) => {
     if (error) throw error;
-    connection.query('select * from scott.dept', (error, results, fields) => {
+    connection.query('select * from scott.emp where job=?', ['president'], (error, results, fields) => {
         console.log(results);
     })
 });
