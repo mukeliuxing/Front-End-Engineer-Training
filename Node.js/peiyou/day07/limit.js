@@ -4,7 +4,7 @@
  * Copyright mingfei.net@gmail.com
  * Released under the MIT license
  *
- * Date: 2017/11/6 16:46
+ * Date: 2017/11/8 17:46
  */
 
 const mysql = require('mysql');
@@ -16,9 +16,9 @@ let connection = mysql.createConnection({
 
 connection.connect((error) => {
     if (error) throw error;
-    connection.query('update scott.test set username=? where id=?', ['Jerry', 1], (error, results, fields) => {
+    connection.query('SELECT * FROM scott.emp LIMIT ? OFFSET ?', [3, 1], (error, results, fields) => {
         if (error) throw error;
-        console.log(results.affectedRows);
+        console.log(results);
     });
 });
 
