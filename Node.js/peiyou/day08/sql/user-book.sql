@@ -1,0 +1,15 @@
+DROP DATABASE IF EXISTS db_user_book;
+CREATE DATABASE db_user_book;
+
+DROP TABLE IF EXISTS db_user_book.user;
+CREATE TABLE db_user_book.user (
+  id       INT AUTO_INCREMENT PRIMARY KEY
+  COMMENT 'ID PK',
+  username VARCHAR(255) NOT NULL
+  COMMENT 'USERNAME',
+  password VARCHAR(255) NOT NULL
+  COMMENT 'PASSWORD'
+)
+  COMMENT 'USER TABLE';
+
+INSERT INTO db_user_book.user VALUE (NULL, 'Tom', '123');
