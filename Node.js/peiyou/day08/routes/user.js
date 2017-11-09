@@ -8,8 +8,9 @@
  */
 
 module.exports = function (app) {
-    app.post('signIn', (req, res) => {
-        console.log(req);
+    app.post('/signIn', (req, res) => {
+        console.log('username: ' + req.body.username);
+        console.log('password: ' + req.body.password);
         res.send('sign in...')
     });
 }
