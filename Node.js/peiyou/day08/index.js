@@ -17,6 +17,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }))
 
+require('./routes/default')(app);
 require('./routes/index')(app);
 require('./routes/user')(app);
 
