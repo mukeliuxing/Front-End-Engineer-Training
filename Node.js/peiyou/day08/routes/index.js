@@ -7,6 +7,10 @@
  * Date: 2017/11/9 11:56
  */
 
+const path = require('path');
+
 module.exports = function (app) {
-    app.use(express.static(__dirname + '/public'));
+    app.get('/', (res, rep) => {
+        rep.sendFile(path.join(__dirname, '../public/index.html'));
+    });
 };
