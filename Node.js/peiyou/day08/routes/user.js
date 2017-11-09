@@ -20,9 +20,9 @@ module.exports = function (app) {
         pool.query('SELECT * FROM db_user_book.user WHERE username=? AND password=?', [req.body.username, req.body.password], (error, results, fields) => {
             if (error) throw error;
             if (results.length === 1) {
-                res.redirect(path.join(__dirname + '../public/index.html'));
+                res.sendFile(path.join(__dirname, '../public/home.html'));
             } else {
-                res.redirect(path.join(__dirname + '../public/default.html'));
+                res.sendFile(path.join(__dirname, '../public/index.html'));
             }
         })
     });

@@ -10,7 +10,7 @@
 const path = require('path');
 
 module.exports = function (app) {
-    app.get('/index', (res, rep) => {
+    app.get('/', (res, rep) => {
         rep.sendFile(path.join(__dirname, '../public/index.html'));
     });
 };

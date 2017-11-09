@@ -10,7 +10,4 @@
 const path = require('path');
 
 module.exports = function (app) {
-    app.get('/', (res, rep) => {
-        rep.sendFile(path.join(__dirname, '../public/default.html'));
-    });
 };
