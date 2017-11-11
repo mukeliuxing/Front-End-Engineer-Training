@@ -470,3 +470,353 @@ request.on('response', (res) => {
 
 request.end();
 ```
+
+- <a name="mysql-"></a> MySQL
+
+```javascript
+
+```
+
+- <a name="mysql-"></a> MySQL
+
+```javascript
+
+```
+
+- <a name="mysql-"></a> MySQL
+
+```javascript
+
+```
+
+- <a name="mysql-"></a> MySQL
+
+```javascript
+
+```
+
+- <a name="mysql-"></a> MySQL
+
+```javascript
+
+```
+
+- <a name="mysql-"></a> MySQL
+
+```javascript
+
+```
+
+- <a name="mysql-"></a> MySQL
+
+```javascript
+
+```
+
+- <a name="mysql-"></a> MySQL
+
+```javascript
+
+```
+
+- <a name="mysql-"></a> MySQL
+
+```javascript
+
+```
+
+- <a name="mysql-"></a> MySQL
+
+```javascript
+
+```
+
+- <a name="mysql-"></a> MySQL
+
+```javascript
+
+```
+
+- <a name="mysql-"></a> MySQL
+
+```javascript
+
+```
+
+- <a name="mysql-import-data"></a> MySQL import data
+
+```javascript
+const cp = require('child_process');
+cp.exec('path-to-mysql-bin/mysql -uroot -psystem < path-to-sql-file/scott.sql', (error, stdout, stderr) => {
+    if (error) throw error;
+    console.log(`stdout: ${stdout}`);
+    console.log(`stderr: ${stderr}`);
+});
+```
+
+- <a name="mysql-connections"></a> MySQL connections
+
+```javascript
+const mysql = require('mysql');
+
+const connection = mysql.createConnection({
+    host: '127.0.0.1',
+    user: 'root',
+    password: 'system',
+    multipleStatements: true
+});
+
+connection.connect((err) => {
+    if (err) {
+        console.log('error: ' + err.stack);
+        return;
+    } else {
+        console.log('connected as id: ' + connection.threadId);
+    }
+});
+
+/*
+connection.query('select * from scott.emp', (err, results, fields) => {
+    if(err) throw err;
+    console.log(results);
+    console.log(fields);
+});
+*/
+```
+
+- <a name="mysql-pooling"></a> MySQL pooling
+
+```javascript
+const mysql = require('mysql');
+
+let pool = mysql.createPool({
+    connectionLimit: 10,
+    user: 'root',
+    password: 'system',
+    database: 'scott'
+});
+
+pool.query('select 1+1 AS solution', (error, results, fields) => {
+    if(error) throw error;
+    console.log(results);
+    console.log(fields);
+});
+
+/*
+pool.getConnection((error, connection) => {
+    connection.query('select 1+1 AS solution', (error, result, fields) => {
+        connection.release();
+        if (error) throw error;
+    });
+});
+*/
+```
+
+- <a name="mysql-insert"></a> MySQL insert
+
+```javascript
+const mysql = require('mysql');
+
+let connection = mysql.createConnection({
+    user: 'root',
+    password: 'system'
+});
+
+connection.query('insert into scott.test values(null, ?, ?)', ['Scott', 'tiger'], (error, results, fields) => {
+    if (error) throw error;
+    console.log(results.insertId);
+});
+```
+
+- <a name="mysql-multiple-statements"></a> MySQL multiple statement
+
+```javascript
+const mysql = require('mysql');
+
+let connection = mysql.createConnection({
+    user: 'root',
+    password: 'system',
+    multipleStatements: true
+});
+
+connection.connect((error) => {
+    if (error) throw error;
+    connection.query('select 1; select 2', (error, results, fields) => {
+        if (error) throw error;
+        console.log(results[0]);
+        console.log(results[1]);
+    });
+});
+
+```
+
+- <a name="mysql-update"></a> MySQL update
+
+```javascript
+const mysql = require('mysql');
+
+let connection = mysql.createConnection({
+    user: 'root',
+    password: 'system'
+});
+
+connection.connect((error) => {
+    if (error) throw error;
+    connection.query('update scott.test set username=? where id=?', ['Jerry', 1], (error, results, fields) => {
+        if (error) throw error;
+        console.log(results.affectedRows);
+    });
+});
+```
+
+- <a name="mysql-delete"></a> MySQL delete
+
+```javascript
+const mysql = require('mysql');
+
+let connection = mysql.createConnection({
+    user: 'root',
+    password: 'system'
+});
+
+connection.connect((error) => {
+    if (error) throw error;
+    connection.query('delete from scott.test where id=?', ['4'], (error, results, fields) => {
+        if (error) throw error;
+        console.log(results.affectedRows);
+    });
+});
+```
+
+- <a name="mysql-limit"></a> MySQL limit
+
+```javascript
+const mysql = require('mysql');
+
+let connection = mysql.createConnection({
+    user: 'root',
+    password: 'system'
+});
+
+connection.connect((error) => {
+    if (error) throw error;
+    connection.query('SELECT * FROM scott.emp LIMIT ? OFFSET ?', [3, 1], (error, results, fields) => {
+        if (error) throw error;
+        console.log(results);
+    });
+});
+```
+
+- <a name="mysql-where"></a> MySQL where
+
+```javascript
+const mysql = require('mysql');
+
+let connection = mysql.createConnection({
+    user: 'root',
+    password: 'system'
+});
+
+connection.connect((error) => {
+    if (error) throw error;
+    connection.query('select * from scott.emp where job=?', ['president'], (error, results, fields) => {
+        console.log(results);
+    })
+});
+```
+
+- <a name="mysql-order-by"></a> MySQL order by
+
+```javascript
+const mysql = require('mysql');
+
+let connection = mysql.createConnection({
+    user: 'root',
+    password: 'system'
+});
+
+connection.connect((error) => {
+    if (error) throw error;
+    connection.query('select ename, deptno from scott.emp order by deptno', (error, results, fields) => {
+        console.log(results);
+    });
+});
+```
+
+- <a name="mysql-limit"></a> MySQL limit
+
+```javascript
+const mysql = require('mysql');
+
+let connection = mysql.createConnection({
+    user: 'root',
+    password: 'system'
+});
+
+connection.connect((error) => {
+    if (error) throw error;
+    connection.query('SELECT * FROM scott.emp LIMIT ? OFFSET ?', [3, 1], (error, results, fields) => {
+        if (error) throw error;
+        console.log(results);
+    });
+});
+
+```
+
+- <a name="mysql-affected-rows"></a> MySQL affected rows
+
+```javascript
+const mysql = require('mysql');
+
+let connection = mysql.createConnection({
+    user: 'root',
+    password: 'system'
+});
+
+connection.connect((error) => {
+    if(error) throw error;
+    console.log('connected...');
+    let sql = 'INSERT INTO scott.test(username, password) VALUES ?';
+    let values = [
+        ['user1', 'pass1'],
+        ['user2', 'pass2'],
+        ['user3', 'pass3']
+    ];
+    connection.query(sql, [values], (error, results, fields) => {
+        if (error) throw error;
+        console.log(results.insertId);
+        console.log(results.affectedRows);
+    });
+});
+
+```
+
+- <a name="mysql-"></a> MySQL
+
+```javascript
+
+```
+
+- <a name="mysql-"></a> MySQL
+
+```javascript
+
+```
+
+- <a name="mysql-"></a> MySQL
+
+```javascript
+
+```
+
+- <a name="mysql-"></a> MySQL
+
+```javascript
+
+```
+
+- <a name="mysql-"></a> MySQL
+
+```javascript
+
+```
