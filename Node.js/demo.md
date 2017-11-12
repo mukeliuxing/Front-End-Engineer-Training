@@ -716,35 +716,3 @@ connection.connect((error) => {
         console.log(results.affectedRows);
     });
 });
-
-```
-
-- <a name="mysql-"></a> MySQL
-
-```javascript
-
-```
-
-- <a name="mysql-"></a> MySQL
-
-```javascript
-
-```
-
-- <a name="mysql-"></a> MySQL
-
-```javascript
-
-```
-
-- <a name="mysql-"></a> MySQL
-
-```javascript
-
-```
-
-- <a name="mysql-"></a> MySQL
-
-```javascript
-
-```
