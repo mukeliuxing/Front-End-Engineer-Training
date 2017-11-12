@@ -202,7 +202,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1508724570223" ID="ID_266644071" MODIFIED="1509702456117" POSITION="right" TEXT="Modules">
+<node CREATED="1508724570223" ID="ID_266644071" MODIFIED="1510447940529" POSITION="right" TEXT="Modules">
 <font NAME="Consolas" SIZE="12"/>
 <node CREATED="1508727959324" ID="ID_942188308" MODIFIED="1508913462614" TEXT="Types">
 <font NAME="Consolas" SIZE="12"/>
@@ -238,9 +238,9 @@
 </node>
 <node CREATED="1508728017760" ID="ID_704004072" MODIFIED="1508913462713" TEXT="Third Party Modules">
 <font NAME="Consolas" SIZE="12"/>
-<node CREATED="1508730384416" FOLDED="true" ID="ID_52599730" MODIFIED="1510191700112" TEXT="Data Access">
+<node CREATED="1508730384416" ID="ID_52599730" MODIFIED="1510447947194" TEXT="Data Access">
 <font NAME="Consolas" SIZE="12"/>
-<node CREATED="1508730408258" FOLDED="true" ID="ID_1177565967" MODIFIED="1510191692862" TEXT="RDBMS">
+<node CREATED="1508730408258" ID="ID_1177565967" MODIFIED="1510447952668" TEXT="RDBMS">
 <font NAME="Consolas" SIZE="12"/>
 <node CREATED="1508730394917" ID="ID_313590772" LINK="https://www.npmjs.com/package/mysql" MODIFIED="1510106451022" TEXT="MySQL">
 <font NAME="Consolas" SIZE="12"/>
@@ -250,22 +250,19 @@
 </node>
 <node CREATED="1508730504012" ID="ID_1878205892" MODIFIED="1510106471834" TEXT="Methods">
 <font NAME="Consolas" SIZE="12"/>
-<node CREATED="1510106474380" ID="ID_1976731560" MODIFIED="1510106504967" TEXT="Establishing connections"/>
-<node CREATED="1510191458389" ID="ID_216166545" MODIFIED="1510191464066" TEXT="Pooling"/>
-<node CREATED="1510190855953" ID="ID_499487442" MODIFIED="1510191165961" TEXT="Import data"/>
-<node CREATED="1510191410090" ID="ID_1114435883" MODIFIED="1510191412619" TEXT="Insert"/>
-<node CREATED="1510191413318" ID="ID_969889686" MODIFIED="1510191417481" TEXT="Delete"/>
-<node CREATED="1510191418325" ID="ID_1515078561" MODIFIED="1510191420751" TEXT="Update"/>
-<node CREATED="1510191421423" ID="ID_1223869265" MODIFIED="1510191426396" TEXT="Select"/>
-<node CREATED="1510191523386" ID="ID_356302597" MODIFIED="1510191535606" TEXT="Where"/>
-<node CREATED="1510191536352" ID="ID_198031854" MODIFIED="1510191538125" TEXT="Limit"/>
-<node CREATED="1510191542267" ID="ID_1367229333" MODIFIED="1510191546112" TEXT="Order by"/>
-<node CREATED="1510191556407" ID="ID_1933338335" MODIFIED="1510191558134" TEXT="Join"/>
-<node CREATED="1510191437955" ID="ID_147167466" MODIFIED="1510191445275" TEXT="AffectedRows"/>
-<node CREATED="1510191473865" ID="ID_470867227" MODIFIED="1510191488292" TEXT="Multiple statement"/>
-<node CREATED="1510191595275" ID="ID_1986125744" MODIFIED="1510191599220" TEXT="Functions"/>
-<node CREATED="1510191603503" ID="ID_1856608281" MODIFIED="1510191611733" TEXT="Precedure"/>
-<node CREATED="1510191618041" ID="ID_947914017" MODIFIED="1510191622335" TEXT="Transaction"/>
+<node CREATED="1510106474380" ID="ID_1976731560" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#mysql-connections" MODIFIED="1510448045773" TEXT="Establishing connections"/>
+<node CREATED="1510191458389" ID="ID_216166545" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#mysql-pooling" MODIFIED="1510448062844" TEXT="Pooling"/>
+<node CREATED="1510190855953" ID="ID_499487442" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#mysql-import-data" MODIFIED="1510448087389" TEXT="Import data"/>
+<node CREATED="1510191410090" ID="ID_1114435883" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#mysql-insert" MODIFIED="1510448097730" TEXT="Insert"/>
+<node CREATED="1510191413318" ID="ID_969889686" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#mysql-delete" MODIFIED="1510448129024" TEXT="Delete"/>
+<node CREATED="1510191418325" ID="ID_1515078561" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#mysql-update" MODIFIED="1510448121747" TEXT="Update"/>
+<node CREATED="1510191421423" ID="ID_1223869265" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#mysql-select" MODIFIED="1510448348379" TEXT="Select"/>
+<node CREATED="1510191523386" ID="ID_356302597" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#mysql-where" MODIFIED="1510448144552" TEXT="Where"/>
+<node CREATED="1510191536352" ID="ID_198031854" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#mysql-limit" MODIFIED="1510448137738" TEXT="Limit"/>
+<node CREATED="1510191542267" ID="ID_1367229333" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#mysql-order-by" MODIFIED="1510448153315" TEXT="Order by"/>
+<node CREATED="1510191556407" ID="ID_1933338335" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#mysql-join" MODIFIED="1510448298420" TEXT="Join"/>
+<node CREATED="1510191437955" ID="ID_147167466" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#mysql-affected-rows" MODIFIED="1510448195005" TEXT="Affected rows"/>
+<node CREATED="1510191473865" ID="ID_470867227" LINK="https://github.com/thu/Front-End-Engineer-Training/blob/master/Node.js/demo.md#mysql-multiple-statements" MODIFIED="1510448111957" TEXT="Multiple statement"/>
 </node>
 </node>
 </node>
@@ -466,7 +463,7 @@
 <font NAME="Consolas" SIZE="12"/>
 </node>
 </node>
-<node CREATED="1508721330036" FOLDED="true" ID="ID_73419346" MODIFIED="1510213040403" POSITION="left" TEXT="API">
+<node CREATED="1508721330036" FOLDED="true" ID="ID_73419346" MODIFIED="1510447936809" POSITION="left" TEXT="API">
 <font NAME="Consolas" SIZE="12"/>
 <node CREATED="1508405007450" FOLDED="true" HGAP="18" ID="ID_788103558" MODIFIED="1509524945607" TEXT="Globals">
 <font NAME="Consolas" SIZE="12"/>
@@ -569,7 +566,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1508405184269" ID="ID_156133102" MODIFIED="1510212217623" TEXT="process">
+<node CREATED="1508405184269" FOLDED="true" ID="ID_156133102" MODIFIED="1510291756511" TEXT="process">
 <font NAME="Consolas" SIZE="12"/>
 <node CREATED="1508465432673" ID="ID_688602695" MODIFIED="1508913462800" TEXT="Process Events">
 <font NAME="Consolas" SIZE="12"/>
@@ -996,7 +993,7 @@
 <font NAME="Consolas" SIZE="12"/>
 </node>
 </node>
-<node CREATED="1508721050348" ID="ID_619406447" MODIFIED="1510212206608" TEXT="Path">
+<node CREATED="1508721050348" FOLDED="true" ID="ID_619406447" MODIFIED="1510291758498" TEXT="Path">
 <font NAME="Consolas" SIZE="12"/>
 <node CREATED="1508815893418" ID="ID_1594707198" MODIFIED="1508914325069" TEXT="Widows vs. POSIX">
 <font NAME="Consolas" SIZE="12"/>
@@ -1131,7 +1128,7 @@
 <font NAME="Consolas" SIZE="12"/>
 </node>
 </node>
-<node CREATED="1508741414197" ID="ID_350117908" MODIFIED="1509524667373" TEXT="Events">
+<node CREATED="1508741414197" FOLDED="true" ID="ID_350117908" MODIFIED="1510291761342" TEXT="Events">
 <font NAME="Consolas" SIZE="12"/>
 <node CREATED="1508741446711" ID="ID_936469964" MODIFIED="1508901016438" TEXT="Class: EventsEmitter">
 <font NAME="Consolas" SIZE="12"/>
@@ -1209,7 +1206,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1508741613737" FOLDED="true" ID="ID_149645199" MODIFIED="1509697911421" TEXT="Buffer">
+<node CREATED="1508741613737" ID="ID_149645199" MODIFIED="1510291767995" TEXT="Buffer">
 <font NAME="Consolas" SIZE="12"/>
 <node CREATED="1508741639983" ID="ID_1482869813" MODIFIED="1508811488499" TEXT="Methods">
 <font NAME="Consolas" SIZE="12"/>
@@ -1242,7 +1239,7 @@
 <font NAME="Consolas" SIZE="12"/>
 </node>
 </node>
-<node CREATED="1509327164565" FOLDED="true" ID="ID_174431778" MODIFIED="1509697908877" TEXT="Class: Buffer">
+<node CREATED="1509327164565" ID="ID_174431778" MODIFIED="1510291777530" TEXT="Class: Buffer">
 <font NAME="Consolas" SIZE="12"/>
 <node COLOR="#999999" CREATED="1509327191315" ID="ID_1416585870" MODIFIED="1509516273797">
 <richcontent TYPE="NODE"><html>

@@ -716,3 +716,42 @@ connection.connect((error) => {
         console.log(results.affectedRows);
     });
 });
+```
+
+- <a name="mysql-join"></a> MySQL join
+
+```javascript
+const mysql = require('mysql');
+
+let connection = mysql.createConnection({
+    user: 'root',
+    password: 'system'
+});
+
+connection.connect((error) => {
+    if (error) throw error;
+    connection.query('SELECT e.ename, d.dname FROM scott.emp e INNER JOIN scott.dept d ON e.deptno = d.deptno', (error, results, fields) => {
+        if (error) throw error;
+        console.log(results);
+    });
+});
+```
+
+- <a name="mysql-select"></a> MySQL select
+
+```javascript
+const mysql = require('mysql');
+
+let connection = mysql.createConnection({
+    user: 'root',
+    password: 'system'
+});
+
+connection.connect((error) => {
+    if (error) throw error;
+    connection.query('SELECT e.ename, d.dname FROM scott.emp e INNER JOIN scott.dept d ON e.deptno = d.deptno', (error, results, fields) => {
+        if (error) throw error;
+        console.log(results);
+    });
+});
+```
