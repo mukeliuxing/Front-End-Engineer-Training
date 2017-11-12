@@ -10,13 +10,19 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
+const session = require('express-session');
 
 const app = express();
 
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
+
+app.use(session({
+    secret: 'demo'
+}));
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 require('./routes/index')(app);

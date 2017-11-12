@@ -7,7 +7,9 @@
  * Date: 2017/11/9 11:56
  */
 
-const path = require('path');
-
 module.exports = function (app) {
+    app.get('/home', (req, res) => {
+        let username = req.session.username;
+        res.end('Welcome: ' + username);
+    })
 };
