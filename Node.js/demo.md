@@ -756,7 +756,7 @@ connection.connect((error) => {
 });
 ```
 
-- <a name="gulp-config-file"</a> Gulp gulpfile.js
+- <a name="gulp-config-file"></a> Gulp gulpfile.js
 
 ```javascript
 // 引入 gulp
